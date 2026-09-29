@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { Link, useRouterState } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
 import { SITE, waLink } from "@/lib/site";
 import { cn } from "@/lib/utils";
@@ -19,7 +19,7 @@ const nav = [
 export const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-  const location = useLocation();
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -28,7 +28,7 @@ export const Header = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  useEffect(() => setOpen(false), [location.pathname]);
+  useEffect(() => setOpen(false), [pathname]);
 
   // Header sempre claro/light: o hero foi ajustado para fundo claro.
   return (
@@ -70,20 +70,15 @@ export const Header = () => {
 
         <nav className="hidden lg:flex items-center gap-1">
           {nav.map((n) => (
-            <NavLink
+            <Link
               key={n.to}
               to={n.to}
-              end={n.to === "/"}
-              className={({ isActive }) =>
-                cn(
-                  "relative px-3 py-2 text-[13.5px] transition-colors",
-                  isActive
-                    ? "text-primary"
-                    : "text-muted-foreground hover:text-primary"
-                )
-              }
+              activeOptions={{ exact: n.to === "/" }}
+              className={cn("relative px-3 py-2 text-[13.5px] transition-colors")}
+              activeProps={{ className: "text-primary" }}
+              inactiveProps={{ className: "text-muted-foreground hover:text-primary" }}
             >
-              {({ isActive }) => (
+              {({ isActive }: { isActive: boolean }) => (
                 <>
                   {n.label}
                   {isActive && (
@@ -95,7 +90,7 @@ export const Header = () => {
                   )}
                 </>
               )}
-            </NavLink>
+            </Link>
           ))}
         </nav>
 
@@ -131,19 +126,16 @@ export const Header = () => {
           >
             <nav className="container-prose py-6 flex flex-col gap-1">
               {nav.map((n) => (
-                <NavLink
+                <Link
                   key={n.to}
                   to={n.to}
-                  end={n.to === "/"}
-                  className={({ isActive }) =>
-                    cn(
-                      "py-3 border-b border-border/60 text-sm",
-                      isActive ? "text-accent" : "text-primary"
-                    )
-                  }
+                  activeOptions={{ exact: n.to === "/" }}
+                  className={cn("py-3 border-b border-border/60 text-sm")}
+                  activeProps={{ className: "text-accent" }}
+                  inactiveProps={{ className: "text-primary" }}
                 >
                   {n.label}
-                </NavLink>
+                </Link>
               ))}
               <a
                 href={waLink()}
