@@ -416,7 +416,7 @@ const Index = () => {
               <Reveal key={to} delay={i * 0.06}>
                 <motion.div whileHover={{ y: -3 }} className="h-full">
                   <Link
-                    to={to}
+                    to={to!}
                     className="bg-background p-8 group hover:bg-primary hover:text-primary-foreground transition-colors h-full block"
                   >
                     <p className="mono text-[10px] uppercase tracking-[0.22em] text-accent mb-3">
