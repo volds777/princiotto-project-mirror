@@ -1,5 +1,5 @@
 import { waLink } from "@/lib/site";
-import { Link } from "react-router-dom";
+import { Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { Marquee } from "./Marquee";
 import { ArrowUpRight } from "lucide-react";

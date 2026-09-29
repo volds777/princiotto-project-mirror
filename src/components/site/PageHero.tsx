@@ -8,7 +8,7 @@ interface Props {
   image?: string;
   imageAlt?: string;
 }
-import { Link } from "react-router-dom";
+import { Link } from "@tanstack/react-router";
 
 export const PageHero = ({ eyebrow, title, lede, breadcrumb, image, imageAlt }: Props) => (
   <section className="relative overflow-hidden border-b border-border bg-background">

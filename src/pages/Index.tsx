@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "@tanstack/react-router";
 import { ArrowUpRight, Award, ShieldCheck, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 import { Seo } from "@/components/site/Seo";
