@@ -54,7 +54,7 @@ export const Footer = () => {
                 ["/contato", "Contato"],
               ].map(([to, label]) => (
                 <li key={to}>
-                  <Link to={to} className="hover:text-accent transition-colors">
+                  <Link to={to!} className="hover:text-accent transition-colors">
                     {label}
                   </Link>
                 </li>

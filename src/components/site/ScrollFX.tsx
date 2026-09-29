@@ -125,7 +125,7 @@ export const ScrollFX = () => {
       cancelAnimationFrame(raf);
       const w = window as unknown as { __fxCleanup?: () => void };
       w.__fxCleanup?.();
-      w.__fxCleanup = undefined;
+      delete w.__fxCleanup;
       ScrollTrigger.getAll().forEach((t) => t.kill());
     };
   }, [pathname]);
