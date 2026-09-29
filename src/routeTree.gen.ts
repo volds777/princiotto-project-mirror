@@ -15,6 +15,11 @@ import { Route as ContatoRouteImport } from './routes/contato'
 import { Route as DiferenciaisRouteImport } from './routes/diferenciais'
 import { Route as RegioesRouteImport } from './routes/regioes'
 import { Route as ServicosRouteImport } from './routes/servicos'
+import { Route as SindicoProfissionalAlphavilleRouteImport } from './routes/sindico-profissional-alphaville'
+import { Route as SindicoProfissionalBarueriRouteImport } from './routes/sindico-profissional-barueri'
+import { Route as SindicoProfissionalOsascoRouteImport } from './routes/sindico-profissional-osasco'
+import { Route as SindicoProfissionalSantanaDeParnaibaRouteImport } from './routes/sindico-profissional-santana-de-parnaiba'
+import { Route as SindicoProfissionalSaoPauloRouteImport } from './routes/sindico-profissional-sao-paulo'
 import { Route as SobreRouteImport } from './routes/sobre'
 
 const IndexRoute = IndexRouteImport.update({
@@ -47,6 +52,36 @@ const ServicosRoute = ServicosRouteImport.update({
   path: '/servicos',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SindicoProfissionalAlphavilleRoute =
+  SindicoProfissionalAlphavilleRouteImport.update({
+    id: '/sindico-profissional-alphaville',
+    path: '/sindico-profissional-alphaville',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalBarueriRoute =
+  SindicoProfissionalBarueriRouteImport.update({
+    id: '/sindico-profissional-barueri',
+    path: '/sindico-profissional-barueri',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalOsascoRoute =
+  SindicoProfissionalOsascoRouteImport.update({
+    id: '/sindico-profissional-osasco',
+    path: '/sindico-profissional-osasco',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalSantanaDeParnaibaRoute =
+  SindicoProfissionalSantanaDeParnaibaRouteImport.update({
+    id: '/sindico-profissional-santana-de-parnaiba',
+    path: '/sindico-profissional-santana-de-parnaiba',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalSaoPauloRoute =
+  SindicoProfissionalSaoPauloRouteImport.update({
+    id: '/sindico-profissional-sao-paulo',
+    path: '/sindico-profissional-sao-paulo',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const SobreRoute = SobreRouteImport.update({
   id: '/sobre',
   path: '/sobre',
@@ -60,6 +95,11 @@ export interface FileRoutesByFullPath {
   '/diferenciais': typeof DiferenciaisRoute
   '/regioes': typeof RegioesRoute
   '/servicos': typeof ServicosRoute
+  '/sindico-profissional-alphaville': typeof SindicoProfissionalAlphavilleRoute
+  '/sindico-profissional-barueri': typeof SindicoProfissionalBarueriRoute
+  '/sindico-profissional-osasco': typeof SindicoProfissionalOsascoRoute
+  '/sindico-profissional-santana-de-parnaiba': typeof SindicoProfissionalSantanaDeParnaibaRoute
+  '/sindico-profissional-sao-paulo': typeof SindicoProfissionalSaoPauloRoute
   '/sobre': typeof SobreRoute
 }
 export interface FileRoutesByTo {
@@ -69,6 +109,11 @@ export interface FileRoutesByTo {
   '/diferenciais': typeof DiferenciaisRoute
   '/regioes': typeof RegioesRoute
   '/servicos': typeof ServicosRoute
+  '/sindico-profissional-alphaville': typeof SindicoProfissionalAlphavilleRoute
+  '/sindico-profissional-barueri': typeof SindicoProfissionalBarueriRoute
+  '/sindico-profissional-osasco': typeof SindicoProfissionalOsascoRoute
+  '/sindico-profissional-santana-de-parnaiba': typeof SindicoProfissionalSantanaDeParnaibaRoute
+  '/sindico-profissional-sao-paulo': typeof SindicoProfissionalSaoPauloRoute
   '/sobre': typeof SobreRoute
 }
 export interface FileRoutesById {
@@ -79,6 +124,11 @@ export interface FileRoutesById {
   '/diferenciais': typeof DiferenciaisRoute
   '/regioes': typeof RegioesRoute
   '/servicos': typeof ServicosRoute
+  '/sindico-profissional-alphaville': typeof SindicoProfissionalAlphavilleRoute
+  '/sindico-profissional-barueri': typeof SindicoProfissionalBarueriRoute
+  '/sindico-profissional-osasco': typeof SindicoProfissionalOsascoRoute
+  '/sindico-profissional-santana-de-parnaiba': typeof SindicoProfissionalSantanaDeParnaibaRoute
+  '/sindico-profissional-sao-paulo': typeof SindicoProfissionalSaoPauloRoute
   '/sobre': typeof SobreRoute
 }
 export interface FileRouteTypes {
@@ -90,6 +140,11 @@ export interface FileRouteTypes {
     | '/diferenciais'
     | '/regioes'
     | '/servicos'
+    | '/sindico-profissional-alphaville'
+    | '/sindico-profissional-barueri'
+    | '/sindico-profissional-osasco'
+    | '/sindico-profissional-santana-de-parnaiba'
+    | '/sindico-profissional-sao-paulo'
     | '/sobre'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -99,6 +154,11 @@ export interface FileRouteTypes {
     | '/diferenciais'
     | '/regioes'
     | '/servicos'
+    | '/sindico-profissional-alphaville'
+    | '/sindico-profissional-barueri'
+    | '/sindico-profissional-osasco'
+    | '/sindico-profissional-santana-de-parnaiba'
+    | '/sindico-profissional-sao-paulo'
     | '/sobre'
   id:
     | '__root__'
@@ -108,6 +168,11 @@ export interface FileRouteTypes {
     | '/diferenciais'
     | '/regioes'
     | '/servicos'
+    | '/sindico-profissional-alphaville'
+    | '/sindico-profissional-barueri'
+    | '/sindico-profissional-osasco'
+    | '/sindico-profissional-santana-de-parnaiba'
+    | '/sindico-profissional-sao-paulo'
     | '/sobre'
   fileRoutesById: FileRoutesById
 }
@@ -118,6 +183,11 @@ export interface RootRouteChildren {
   DiferenciaisRoute: typeof DiferenciaisRoute
   RegioesRoute: typeof RegioesRoute
   ServicosRoute: typeof ServicosRoute
+  SindicoProfissionalAlphavilleRoute: typeof SindicoProfissionalAlphavilleRoute
+  SindicoProfissionalBarueriRoute: typeof SindicoProfissionalBarueriRoute
+  SindicoProfissionalOsascoRoute: typeof SindicoProfissionalOsascoRoute
+  SindicoProfissionalSantanaDeParnaibaRoute: typeof SindicoProfissionalSantanaDeParnaibaRoute
+  SindicoProfissionalSaoPauloRoute: typeof SindicoProfissionalSaoPauloRoute
   SobreRoute: typeof SobreRoute
 }
 
@@ -165,6 +235,41 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServicosRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/sindico-profissional-alphaville': {
+      id: '/sindico-profissional-alphaville'
+      path: '/sindico-profissional-alphaville'
+      fullPath: '/sindico-profissional-alphaville'
+      preLoaderRoute: typeof SindicoProfissionalAlphavilleRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-barueri': {
+      id: '/sindico-profissional-barueri'
+      path: '/sindico-profissional-barueri'
+      fullPath: '/sindico-profissional-barueri'
+      preLoaderRoute: typeof SindicoProfissionalBarueriRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-osasco': {
+      id: '/sindico-profissional-osasco'
+      path: '/sindico-profissional-osasco'
+      fullPath: '/sindico-profissional-osasco'
+      preLoaderRoute: typeof SindicoProfissionalOsascoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-santana-de-parnaiba': {
+      id: '/sindico-profissional-santana-de-parnaiba'
+      path: '/sindico-profissional-santana-de-parnaiba'
+      fullPath: '/sindico-profissional-santana-de-parnaiba'
+      preLoaderRoute: typeof SindicoProfissionalSantanaDeParnaibaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-sao-paulo': {
+      id: '/sindico-profissional-sao-paulo'
+      path: '/sindico-profissional-sao-paulo'
+      fullPath: '/sindico-profissional-sao-paulo'
+      preLoaderRoute: typeof SindicoProfissionalSaoPauloRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/sobre': {
       id: '/sobre'
       path: '/sobre'
@@ -182,6 +287,12 @@ const rootRouteChildren: RootRouteChildren = {
   DiferenciaisRoute: DiferenciaisRoute,
   RegioesRoute: RegioesRoute,
   ServicosRoute: ServicosRoute,
+  SindicoProfissionalAlphavilleRoute: SindicoProfissionalAlphavilleRoute,
+  SindicoProfissionalBarueriRoute: SindicoProfissionalBarueriRoute,
+  SindicoProfissionalOsascoRoute: SindicoProfissionalOsascoRoute,
+  SindicoProfissionalSantanaDeParnaibaRoute:
+    SindicoProfissionalSantanaDeParnaibaRoute,
+  SindicoProfissionalSaoPauloRoute: SindicoProfissionalSaoPauloRoute,
   SobreRoute: SobreRoute,
 }
 export const routeTree = rootRouteImport
