@@ -1,4 +1,3 @@
-import { Helmet } from "react-helmet-async";
 import { SITE } from "@/lib/site";
 
 interface SeoProps {
@@ -8,22 +7,25 @@ interface SeoProps {
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 }
 
-export const Seo = ({ title, description, path = "/", jsonLd }: SeoProps) => {
-  const url = `${SITE.baseUrl}${path}`;
-  const fullTitle = title.includes(SITE.name) ? title : `${title} | ${SITE.name}`;
+/**
+ * Title/description/canonical/og tags are declared per route via the
+ * TanStack Router `head()` option (see src/lib/seo.ts).
+ * This component only emits structured data (JSON-LD) for the page.
+ */
+export const Seo = ({ jsonLd }: SeoProps) => {
+  if (!jsonLd) return null;
+  const blocks = Array.isArray(jsonLd) ? jsonLd : [jsonLd];
   return (
-    <Helmet>
-      <title>{fullTitle}</title>
-      <meta name="description" content={description} />
-      <link rel="canonical" href={url} />
-      <meta property="og:title" content={fullTitle} />
-      <meta property="og:description" content={description} />
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content={url} />
-      <meta name="twitter:card" content="summary_large_image" />
-      {jsonLd && (
-        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
-      )}
-    </Helmet>
+    <>
+      {blocks.map((block, i) => (
+        <script
+          key={i}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(block) }}
+        />
+      ))}
+    </>
   );
 };
+
+export const seoUrl = (path = "/") => `${SITE.baseUrl}${path}`;
