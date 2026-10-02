@@ -78,7 +78,7 @@ export const routeHead = (path: string, extraJsonLd: Record<string, unknown>[] =
     description: r.description,
     path: r.path,
     robots: isIndexable(r) ? "index, follow" : "noindex, follow",
-    ogImage: r.ogImage,
+    ...(r.ogImage ? { ogImage: r.ogImage } : {}),
     jsonLd: [...blocks, ...extraJsonLd],
   });
 };
