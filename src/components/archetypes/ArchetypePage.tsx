@@ -21,8 +21,8 @@ export const ArchetypePage = ({ entity, route, children }: { entity: Entity; rou
       <PageHero
         eyebrow={entity.hero.eyebrow}
         title={entity.hero.title}
-        lede={entity.hero.lede}
-        breadcrumb={route.breadcrumbs?.map((b, i, a) => ({ label: b.name, to: i < a.length - 1 ? b.path : undefined }))}
+        {...(entity.hero.lede ? { lede: entity.hero.lede } : {})}
+        {...(route.breadcrumbs ? { breadcrumb: route.breadcrumbs.map((b, i, a) => i < a.length - 1 ? { label: b.name, to: b.path } : { label: b.name }) } : {})}
       />
 
       {children}

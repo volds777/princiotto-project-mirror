@@ -15,7 +15,7 @@ const fullTitleOf = (title: string) => (title.includes(SITE.name) ? title : `${t
 
 /** Low-level builder: title, description, canonical, robots, Open Graph, Twitter Card, JSON-LD. */
 export const seoHead = ({ title, description, path = "/", robots = "index, follow", ogImage, jsonLd = [] }: SeoHeadInput) => {
-  const url = absoluteUrl(path);
+  const url = path;
   const fullTitle = fullTitleOf(title);
   const meta: Record<string, string>[] = [
     { title: fullTitle },
@@ -32,7 +32,7 @@ export const seoHead = ({ title, description, path = "/", robots = "index, follo
     { name: "twitter:title", content: fullTitle },
     { name: "twitter:description", content: description },
   ];
-  if (ogImage) {
+  if (ogImage?.startsWith("https://")) {
     meta.push({ property: "og:image", content: ogImage }, { name: "twitter:image", content: ogImage });
   }
   return {
@@ -78,7 +78,7 @@ export const routeHead = (path: string, extraJsonLd: Record<string, unknown>[] =
     description: r.description,
     path: r.path,
     robots: isIndexable(r) ? "index, follow" : "noindex, follow",
-    ogImage: r.ogImage,
+    ...(r.ogImage ? { ogImage: r.ogImage } : {}),
     jsonLd: [...blocks, ...extraJsonLd],
   });
 };

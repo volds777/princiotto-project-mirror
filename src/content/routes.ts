@@ -108,16 +108,3 @@ export const dynamicRoutes = () => routes.filter((r) => !r.hasRouteFile);
 export const relatedRoutes = (path: string) =>
   (getRoute(path)?.related ?? []).map(getRoute).filter((r): r is RouteEntry => !!r);
 export const absoluteUrl = (path: string) => `${SITE_ORIGIN}${path === "/" ? "/" : path}`;
-
-export const buildSitemapXml = () => {
-  const urls = indexableRoutes()
-    .map(
-      (r) =>
-        `  <url>\n    <loc>${absoluteUrl(r.path)}</loc>\n` +
-        (r.lastmod ? `    <lastmod>${r.lastmod}</lastmod>\n` : "") +
-        `    <changefreq>${r.changefreq ?? "monthly"}</changefreq>\n` +
-        `    <priority>${(r.priority ?? 0.7).toFixed(1)}</priority>\n  </url>`,
-    )
-    .join("\n");
-  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`;
-};

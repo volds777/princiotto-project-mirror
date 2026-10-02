@@ -24,8 +24,10 @@ export const Route = createFileRoute("/$slug")({
 
 function DynamicPage() {
   const { path } = Route.useLoaderData();
-  const route = getRoute(path)!;
-  const entity = getEntity(route.entity!.collection, route.entity!.id)!;
-  const Component = archetypeComponents[route.entity!.collection];
+  const route = getRoute(path);
+  if (!route?.entity) return null;
+  const entity = getEntity(route.entity.collection, route.entity.id);
+  if (!entity) return null;
+  const Component = archetypeComponents[route.entity.collection];
   return <Component entity={entity} route={route} />;
 }
