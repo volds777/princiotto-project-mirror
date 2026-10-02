@@ -5,11 +5,30 @@
 //     React/TanStack dedupe, error logger plugins, and sandbox detection (port/host/strictPort).
 // You can pass additional config via defineConfig({ vite: { ... }, etc... }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
+import type { Plugin } from "vite";
+import { buildSitemapXml, indexableRoutes } from "./src/content/routes";
+
+/** Emits sitemap.xml from the central route registry (no manual list). */
+const sitemapPlugin = (): Plugin => ({
+  name: "registry-sitemap",
+  apply: "build",
+  generateBundle() {
+    const env = (this as unknown as { environment?: { name: string } }).environment;
+    if (env && env.name !== "client") return;
+    this.emitFile({ type: "asset", fileName: "sitemap.xml", source: buildSitemapXml() });
+  },
+});
 
 export default defineConfig({
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
     server: { entry: "server" },
+    // Every indexable registry route is prerendered to <path>/index.html at build time.
+    pages: indexableRoutes().map((r) => ({ path: r.path })),
+    prerender: { enabled: true, autoStaticPathsDiscovery: false },
+    // SPA shell used as fallback for non-prerendered URLs on static hosting.
+    spa: { enabled: true },
   },
+  vite: { plugins: [sitemapPlugin()] },
 });
