@@ -48,18 +48,18 @@ export const routes: RouteEntry[] = [
     archetype: "institutional",
     hasRouteFile: true,
     schemaType: "CollectionPage",
-    title: "Serviços de Síndico Profissional e Gestão Condominial",
+    title: "Serviços de Sindicatura Profissional",
     description:
-      "Gestão administrativa, financeira, manutenção, segurança, assembleias e compliance condominial conduzidos por síndico profissional experiente.",
+      "Gestão financeira, manutenção preventiva, segurança, governança e prestação de contas: o escopo completo da sindicatura profissional de Ricardo Princiotto.",
     breadcrumbs: [home, { name: "Serviços", path: "/servicos" }],
   },
   {
     path: "/diferenciais",
     archetype: "institutional",
     hasRouteFile: true,
-    title: "Diferenciais de um Síndico Profissional Experiente",
+    title: "Diferenciais de Ricardo Princiotto",
     description:
-      "Por que contratar Ricardo Princiotto: 20+ anos de gestão, formação em Direito pela PUC/SP, especialização em segurança e certificação Síndico 5 Estrelas.",
+      "Conheça os diferenciais que tornam a sindicatura profissional de Ricardo Princiotto referência: experiência, certificação, presença real, transparência e cobertura formal.",
     breadcrumbs: [home, { name: "Diferenciais", path: "/diferenciais" }],
   },
   {
@@ -76,9 +76,9 @@ export const routes: RouteEntry[] = [
     archetype: "institutional",
     hasRouteFile: true,
     schemaType: "CollectionPage",
-    title: "Regiões Atendidas — Síndico Profissional",
+    title: "Regiões Atendidas — Osasco, Barueri, Alphaville e SP",
     description:
-      "Atuação como síndico profissional em Osasco, Barueri, Alphaville, Santana de Parnaíba e São Paulo.",
+      "Atuação como síndico profissional em Osasco, Barueri, Alphaville, Santana de Parnaíba e São Paulo, com presença real nos condomínios.",
     breadcrumbs: [home, regioes],
   },
   {
@@ -86,9 +86,9 @@ export const routes: RouteEntry[] = [
     archetype: "institutional",
     hasRouteFile: true,
     schemaType: "ContactPage",
-    title: "Contato — Síndico Profissional Ricardo Princiotto",
+    title: "Contato — Solicitar Proposta de Sindicatura",
     description:
-      "Fale com Ricardo Princiotto pelo WhatsApp ou e-mail e agende uma conversa sobre a gestão profissional do seu condomínio.",
+      "Entre em contato com Ricardo Princiotto pelo WhatsApp ou formulário. Resposta rápida e proposta personalizada para o seu condomínio.",
     breadcrumbs: [home, { name: "Contato", path: "/contato" }],
   },
   regional(osasco),
