@@ -17,22 +17,37 @@ export interface Section {
 }
 
 interface BaseEntity {
+  /** URL slug (path without leading slash). */
   id: string;
   /** Short display name, used in breadcrumbs and internal links. */
   name: string;
+  seoTitle: string;
+  seoDescription: string;
   hero: { eyebrow: string; title: string; lede?: string };
   sections: Section[];
-  faqIds?: string[];
+  /** Visible FAQ written for this page (also emitted as FAQPage JSON-LD). */
+  faqs?: FaqItem[];
+  /** Contextual internal links (paths). */
+  related?: string[];
   proofIds?: string[];
   caseIds?: string[];
   cta?: { title?: string; description?: string; waMessage?: string };
 }
 
 export interface Service extends BaseEntity { kind: "service" }
-export interface Problem extends BaseEntity { kind: "problem"; symptoms?: string[] }
+export interface Problem extends BaseEntity { kind: "problem" }
 export interface Audience extends BaseEntity { kind: "audience" }
 export interface CondoType extends BaseEntity { kind: "condoType" }
-export interface Location extends BaseEntity { kind: "location"; city: string; state: string }
+export interface Location extends BaseEntity {
+  kind: "location";
+  city: string;
+  state: string;
+  /** Hub group: São Paulo, Osasco, Barueri, Santana de Parnaíba, Grande São Paulo, Interior. */
+  group: string;
+  /** Nearby localities (paths), geographically coherent. */
+  nearby?: string[];
+  areaServed: string;
+}
 export interface Decision extends BaseEntity { kind: "decision" }
 
 export type Entity = Service | Problem | Audience | CondoType | Location | Decision;
@@ -81,6 +96,7 @@ export interface RouteEntry {
   entity?: { collection: Exclude<Archetype, "home" | "institutional" | "regional">; id: string };
   breadcrumbs?: Breadcrumb[];
   related?: string[];
+  nearby?: string[];
   ogImage?: string;
   changefreq?: "weekly" | "monthly" | "yearly";
   priority?: number;
