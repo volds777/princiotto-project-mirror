@@ -1,0 +1,815 @@
+{
+  "pages": [
+    {
+      "path": "/",
+      "sitemap": {
+        "priority": 1,
+        "changefreq": "weekly"
+      }
+    },
+    {
+      "path": "/sobre",
+      "sitemap": {}
+    },
+    {
+      "path": "/servicos",
+      "sitemap": {}
+    },
+    {
+      "path": "/diferenciais",
+      "sitemap": {}
+    },
+    {
+      "path": "/cases",
+      "sitemap": {}
+    },
+    {
+      "path": "/regioes",
+      "sitemap": {}
+    },
+    {
+      "path": "/contato",
+      "sitemap": {}
+    },
+    {
+      "path": "/sindico-profissional-osasco",
+      "sitemap": {
+        "priority": 0.8,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-barueri",
+      "sitemap": {
+        "priority": 0.8,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-alphaville",
+      "sitemap": {
+        "priority": 0.8,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-santana-de-parnaiba",
+      "sitemap": {
+        "priority": 0.8,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-sao-paulo",
+      "sitemap": {
+        "priority": 0.8,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/gestao-condominial",
+      "sitemap": {
+        "priority": 0.8,
+        "changefreq": "weekly"
+      }
+    },
+    {
+      "path": "/sindicatura-profissional",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/compliance-condominial",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/legalizacao-de-condominio",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/diagnostico-condominial",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/gestao-administrativa-de-condominio",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/planejamento-plurianual-condominio",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/prestacao-de-contas-condominial",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/gestao-de-inadimplencia-condominial",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/gestao-de-contratos-do-condominio",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/gestao-de-prestadores-e-equipes",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/manutencao-preventiva-condominial",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/modernizacao-de-condominio",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/governanca-condominial",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/relacao-sindico-profissional-e-conselho",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/conducao-de-assembleias",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/comunicacao-com-condominos",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/mediacao-de-conflitos-condominiais",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/valorizacao-patrimonial-condominio",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/implantacao-de-condominio",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/troca-de-sindico",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/seguranca-patrimonial-condominio",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/condominio-em-crise",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/recuperacao-financeira-de-condominio",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/falta-de-transparencia-no-condominio",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-para-conselho-fiscal",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/orientacao-para-sindico-morador",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/transicao-sindico-morador-para-profissional",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-para-administradoras",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/condominio-sem-candidato-a-sindico",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/como-o-conselho-pode-contratar-sindico-profissional",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/contratacao-de-sindico-profissional-em-assembleia",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-para-condominio-residencial",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-para-condominio-horizontal",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-para-condominio-alto-padrao",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-para-condominio-clube",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-para-condominio-multiplas-torres",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-para-condominio-grande-porte",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-para-condominio-misto",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-para-condominio-comercial",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-para-condominio-antigo",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-para-condominio-operacao-complexa",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-vila-yara",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-vila-campesina",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-centro-de-osasco",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-bela-vista-osasco",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-alto-da-lapa",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-alto-de-pinheiros",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-vila-leopoldina",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-perdizes",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-pompeia",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-sumare",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-vila-madalena",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-vila-romana",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-vila-sao-francisco",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-itaim-bibi",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-vila-olimpia",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-centro-de-barueri",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-tambore",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-centro-de-santana-de-parnaiba",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-granja-viana",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-lapa",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-pinheiros",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-butanta",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-barra-funda",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-higienopolis",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-bela-vista",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-paulista",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-jardins",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-jardim-paulista",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-jardim-america",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-jardim-europa",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-ibirapuera",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-moema",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-vila-nova-conceicao",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-brooklin",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-campo-belo",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-vila-andrade",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-vila-mariana",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-vila-clementino",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-vila-mascote",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-alto-da-boa-vista",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-presidente-altino",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-jaguaribe",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-bussocaba",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-km-18",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-quitauna",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-carapicuiba",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-aldeia-da-serra",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-fazendinha",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-campinas",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-indaiatuba",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-vinhedo",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-parque-dos-principes",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-parque-sao-domingos",
+      "sitemap": {
+        "priority": 0.7,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/o-que-faz-um-sindico-profissional",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/como-contratar-sindico-profissional",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/como-escolher-sindico-profissional",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/quando-trocar-o-sindico",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/sindico-profissional-ou-sindico-morador",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/eleicao-de-sindico-profissional",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/responsabilidades-do-sindico-profissional",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/visitas-do-sindico-profissional",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/vantagens-do-sindico-profissional",
+      "sitemap": {
+        "priority": 0.6,
+        "changefreq": "monthly"
+      }
+    },
+    {
+      "path": "/",
+      "prerender": {
+        "outputPath": "/_shell",
+        "crawlLinks": false,
+        "retryCount": 0,
+        "enabled": true,
+        "headers": {
+          "X-TSS_SHELL": "true"
+        }
+      },
+      "sitemap": {
+        "exclude": true
+      }
+    }
+  ],
+  "host": "https://ricardoprinciotto.com.br",
+  "lastBuilt": "2026-10-06T16:38:47.844Z"
+}

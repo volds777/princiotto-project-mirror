@@ -8,6 +8,7 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 import { indexableRoutes, SITE_ORIGIN } from "./src/content/routes";
 
 export default defineConfig({
+  vite: { server: { watch: { ignored: ["**/site-pronto/**"] } } },
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this

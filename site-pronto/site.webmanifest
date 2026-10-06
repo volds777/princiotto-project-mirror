@@ -1,0 +1,10 @@
+{
+  "name": "Ricardo Princiotto — Síndico Profissional",
+  "short_name": "Princiotto",
+  "lang": "pt-BR",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0f1a2b",
+  "icons": [{ "src": "/favicon.ico", "sizes": "48x48", "type": "image/x-icon" }]
+}

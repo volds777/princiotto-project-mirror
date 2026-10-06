@@ -1,0 +1,1 @@
+var e=`/assets/regions-mvxv5wcb.jpg`;export{e as t};

@@ -1,0 +1,1 @@
+var e=`/assets/security-D8QchBec.jpg`;export{e as t};

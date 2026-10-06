@@ -1,0 +1,1 @@
+var e=`/assets/aerial-CldRvi89.jpg`;export{e as t};
