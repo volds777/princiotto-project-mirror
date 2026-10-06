@@ -2,6 +2,7 @@ import type {
   Audience, CaseStudy, CondoType, Decision, Entity, FaqItem, Location, Problem, Proof, Service,
 } from "./types";
 import { priorityRegions } from "./pages/regions-priority";
+import { attendRegions } from "./pages/regions-attend";
 import { services as svc, problems as prb, audiences as aud, condoTypes as ct, decisions as dec } from "./pages/intents";
 
 /** Entity collections for data-driven entry pages (see src/content/pages/*). */
@@ -9,7 +10,7 @@ export const services: Service[] = svc;
 export const problems: Problem[] = prb;
 export const audiences: Audience[] = aud;
 export const condoTypes: CondoType[] = ct;
-export const locations: Location[] = [...priorityRegions];
+export const locations: Location[] = [...priorityRegions, ...attendRegions];
 export const decisions: Decision[] = dec;
 
 export const proofs: Proof[] = [];
