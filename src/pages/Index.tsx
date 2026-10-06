@@ -8,6 +8,7 @@ import { SpinningBadge } from "@/components/site/SpinningBadge";
 import { Reveal } from "@/components/site/Reveal";
 import { Magnetic, SpotlightCard } from "@/components/site/Magnetic";
 import { Testimonials } from "@/components/site/Testimonials";
+import { LocationsDirectory } from "@/components/site/LocationsDirectory";
 import { SITE, waLink } from "@/lib/site";
 import { services, differentials, faqs } from "@/data/services";
 import heroBg from "@/assets/hero-bg.jpg";
@@ -463,6 +464,8 @@ const Index = () => {
       </section>
 
       <Testimonials />
+
+      <LocationsDirectory />
 
       <CTASection />
     </>

@@ -3,6 +3,7 @@ import { Seo } from "@/components/site/Seo";
 import { PageHero } from "@/components/site/PageHero";
 import { CTASection } from "@/components/site/CTASection";
 import { Reveal } from "@/components/site/Reveal";
+import { LocationsDirectory } from "@/components/site/LocationsDirectory";
 import { Marquee } from "@/components/site/Marquee";
 import { motion } from "framer-motion";
 import regionsImg from "@/assets/regions.jpg";
@@ -70,6 +71,8 @@ const Regioes = () => (
         </Reveal>
       ))}
     </section>
+
+    <LocationsDirectory title="Todos os bairros e cidades com página própria" />
 
     <CTASection eyebrow="Atendimento" title="Seu condomínio está em uma dessas regiões?" />
   </>
