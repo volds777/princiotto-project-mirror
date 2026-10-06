@@ -2,8 +2,8 @@ import { Link } from "@tanstack/react-router";
 import { PageHero } from "@/components/site/PageHero";
 import { CTASection } from "@/components/site/CTASection";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { getCases, getFaqs, getProofs } from "@/content/collections";
-import { relatedRoutes } from "@/content/routes";
+import { getCases, getProofs } from "@/content/collections";
+import { nearbyRoutes, relatedRoutes } from "@/content/routes";
 import type { Entity, RouteEntry } from "@/content/types";
 
 /**
@@ -11,10 +11,11 @@ import type { Entity, RouteEntry } from "@/content/types";
  * PageHero / CTASection and design utilities so new pages match the current look.
  */
 export const ArchetypePage = ({ entity, route, children }: { entity: Entity; route: RouteEntry; children?: React.ReactNode }) => {
-  const faqs = getFaqs(entity.faqIds);
+  const faqs = entity.faqs ?? [];
   const proofs = getProofs(entity.proofIds);
   const cases = getCases(entity.caseIds);
   const related = relatedRoutes(route.path);
+  const nearby = nearbyRoutes(route.path);
 
   return (
     <>
@@ -70,17 +71,19 @@ export const ArchetypePage = ({ entity, route, children }: { entity: Entity; rou
         </section>
       )}
 
-      {related.length > 0 && (
-        <section className="border-b border-border">
-          <div className="container-prose py-12">
-            <p className="eyebrow mb-4">Veja também</p>
-            <ul className="flex flex-wrap gap-4">
-              {related.map((r) => (
-                <li key={r.path}><Link to={r.path} className="underline underline-offset-4">{r.breadcrumbs?.at(-1)?.name ?? r.title}</Link></li>
-              ))}
-            </ul>
-          </div>
-        </section>
+      {[["Conteúdos relacionados", related], ["Regiões próximas", nearby]].map(([label, list]) =>
+        (list as RouteEntry[]).length > 0 ? (
+          <section key={label as string} className="border-b border-border">
+            <div className="container-prose py-12">
+              <h2 className="eyebrow mb-4">{label as string}</h2>
+              <ul className="flex flex-wrap gap-x-6 gap-y-3">
+                {(list as RouteEntry[]).map((r) => (
+                  <li key={r.path}><Link to={r.path} className="underline underline-offset-4 hover:text-primary">{r.breadcrumbs?.at(-1)?.name ?? r.title}</Link></li>
+                ))}
+              </ul>
+            </div>
+          </section>
+        ) : null,
       )}
 
       <CTASection {...entity.cta} />
