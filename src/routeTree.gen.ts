@@ -14,6 +14,7 @@ import { Route as SlugRouteImport } from './routes/$slug'
 import { Route as CasesRouteImport } from './routes/cases'
 import { Route as ContatoRouteImport } from './routes/contato'
 import { Route as DiferenciaisRouteImport } from './routes/diferenciais'
+import { Route as GestaoCondominialRouteImport } from './routes/gestao-condominial'
 import { Route as RegioesRouteImport } from './routes/regioes'
 import { Route as ServicosRouteImport } from './routes/servicos'
 import { Route as SindicoProfissionalAlphavilleRouteImport } from './routes/sindico-profissional-alphaville'
@@ -46,6 +47,11 @@ const ContatoRoute = ContatoRouteImport.update({
 const DiferenciaisRoute = DiferenciaisRouteImport.update({
   id: '/diferenciais',
   path: '/diferenciais',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GestaoCondominialRoute = GestaoCondominialRouteImport.update({
+  id: '/gestao-condominial',
+  path: '/gestao-condominial',
   getParentRoute: () => rootRouteImport,
 } as any)
 const RegioesRoute = RegioesRouteImport.update({
@@ -100,6 +106,7 @@ export interface FileRoutesByFullPath {
   '/cases': typeof CasesRoute
   '/contato': typeof ContatoRoute
   '/diferenciais': typeof DiferenciaisRoute
+  '/gestao-condominial': typeof GestaoCondominialRoute
   '/regioes': typeof RegioesRoute
   '/servicos': typeof ServicosRoute
   '/sindico-profissional-alphaville': typeof SindicoProfissionalAlphavilleRoute
@@ -115,6 +122,7 @@ export interface FileRoutesByTo {
   '/cases': typeof CasesRoute
   '/contato': typeof ContatoRoute
   '/diferenciais': typeof DiferenciaisRoute
+  '/gestao-condominial': typeof GestaoCondominialRoute
   '/regioes': typeof RegioesRoute
   '/servicos': typeof ServicosRoute
   '/sindico-profissional-alphaville': typeof SindicoProfissionalAlphavilleRoute
@@ -131,6 +139,7 @@ export interface FileRoutesById {
   '/cases': typeof CasesRoute
   '/contato': typeof ContatoRoute
   '/diferenciais': typeof DiferenciaisRoute
+  '/gestao-condominial': typeof GestaoCondominialRoute
   '/regioes': typeof RegioesRoute
   '/servicos': typeof ServicosRoute
   '/sindico-profissional-alphaville': typeof SindicoProfissionalAlphavilleRoute
@@ -148,6 +157,7 @@ export interface FileRouteTypes {
     | '/cases'
     | '/contato'
     | '/diferenciais'
+    | '/gestao-condominial'
     | '/regioes'
     | '/servicos'
     | '/sindico-profissional-alphaville'
@@ -163,6 +173,7 @@ export interface FileRouteTypes {
     | '/cases'
     | '/contato'
     | '/diferenciais'
+    | '/gestao-condominial'
     | '/regioes'
     | '/servicos'
     | '/sindico-profissional-alphaville'
@@ -178,6 +189,7 @@ export interface FileRouteTypes {
     | '/cases'
     | '/contato'
     | '/diferenciais'
+    | '/gestao-condominial'
     | '/regioes'
     | '/servicos'
     | '/sindico-profissional-alphaville'
@@ -194,6 +206,7 @@ export interface RootRouteChildren {
   CasesRoute: typeof CasesRoute
   ContatoRoute: typeof ContatoRoute
   DiferenciaisRoute: typeof DiferenciaisRoute
+  GestaoCondominialRoute: typeof GestaoCondominialRoute
   RegioesRoute: typeof RegioesRoute
   ServicosRoute: typeof ServicosRoute
   SindicoProfissionalAlphavilleRoute: typeof SindicoProfissionalAlphavilleRoute
@@ -239,6 +252,13 @@ declare module '@tanstack/react-router' {
       path: '/diferenciais'
       fullPath: '/diferenciais'
       preLoaderRoute: typeof DiferenciaisRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gestao-condominial': {
+      id: '/gestao-condominial'
+      path: '/gestao-condominial'
+      fullPath: '/gestao-condominial'
+      preLoaderRoute: typeof GestaoCondominialRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/regioes': {
@@ -306,6 +326,7 @@ const rootRouteChildren: RootRouteChildren = {
   CasesRoute: CasesRoute,
   ContatoRoute: ContatoRoute,
   DiferenciaisRoute: DiferenciaisRoute,
+  GestaoCondominialRoute: GestaoCondominialRoute,
   RegioesRoute: RegioesRoute,
   ServicosRoute: ServicosRoute,
   SindicoProfissionalAlphavilleRoute: SindicoProfissionalAlphavilleRoute,
