@@ -22,7 +22,7 @@ export const LocationsDirectory = ({ title = "Bairros e cidades atendidos" }: { 
         </Link>
       </div>
 
-      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid items-start gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {GROUPS.map((g) => {
           const items = locations.filter((l) => l.group === g);
           if (!items.length) return null;
