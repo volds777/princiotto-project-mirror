@@ -114,7 +114,7 @@ export const routes: RouteEntry[] = [
   ...allEntities.map((e): RouteEntry => ({
     path: `/${e.id}`,
     archetype: e.kind,
-    hasRouteFile: false,
+    hasRouteFile: true,
     entity: { collection: e.kind, id: e.id },
     title: e.seoTitle,
     description: e.seoDescription,
