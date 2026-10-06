@@ -1,0 +1,1 @@
+var e=`/assets/lobby-XZnw-7Yb.jpg`;export{e as t};

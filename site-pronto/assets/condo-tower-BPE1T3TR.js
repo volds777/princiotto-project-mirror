@@ -1,0 +1,1 @@
+var e=`/assets/condo-tower-D4Lb1kcw.jpg`;export{e as t};

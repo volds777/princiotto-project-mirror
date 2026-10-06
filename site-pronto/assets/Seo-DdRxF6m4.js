@@ -1,0 +1,1 @@
+import{N as e}from"./proxy-DMjDK1VC.js";var t=e(),n=({jsonLd:e})=>e?(0,t.jsx)(t.Fragment,{children:(Array.isArray(e)?e:[e]).map((e,n)=>(0,t.jsx)(`script`,{type:`application/ld+json`,dangerouslySetInnerHTML:{__html:JSON.stringify(e)}},n))}):null;export{n as t};
