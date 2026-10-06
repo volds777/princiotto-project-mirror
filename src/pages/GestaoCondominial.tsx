@@ -13,7 +13,7 @@ const List = ({ title, items }: { title: string; items: Entity[] }) =>
       <ul className="space-y-2">
         {items.map((e) => (
           <li key={e.id}>
-            <Link to={`/${e.id}`} className="text-muted-foreground hover:text-primary underline-offset-4 hover:underline">{e.name}</Link>
+            <Link to="/$slug" params={{ slug: e.id }} className="text-muted-foreground hover:text-primary underline-offset-4 hover:underline">{e.name}</Link>
           </li>
         ))}
       </ul>
