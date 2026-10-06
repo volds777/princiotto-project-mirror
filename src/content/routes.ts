@@ -1,11 +1,13 @@
 import type { RouteEntry } from "./types";
 import { osasco, barueri, alphaville, santanaParnaiba, saoPaulo } from "../data/localPages";
+import { allEntities } from "./collections";
 
 /** Canonical origin (non-www + https, as used by the current site). */
 export const SITE_ORIGIN = "https://ricardoprinciotto.com.br";
 
 const home = { name: "Início", path: "/" };
 const regioes = { name: "Regiões", path: "/regioes" };
+const gestao = { name: "Gestão condominial", path: "/gestao-condominial" };
 
 const regional = (d: typeof osasco): RouteEntry => ({
   path: `/${d.slug}`,
@@ -96,15 +98,43 @@ export const routes: RouteEntry[] = [
   regional(alphaville),
   regional(santanaParnaiba),
   regional(saoPaulo),
-  // Future data-driven pages go here, e.g.:
-  // { path: "/compliance-condominial", archetype: "service", hasRouteFile: false,
-  //   entity: { collection: "service", id: "compliance-condominial" }, ... },
+  {
+    path: "/gestao-condominial",
+    archetype: "institutional",
+    hasRouteFile: true,
+    schemaType: "CollectionPage",
+    title: "Gestão Condominial: Guias, Serviços e Regiões Atendidas",
+    description:
+      "Índice de conteúdos sobre sindicatura profissional: serviços, problemas, perfis de condomínio, guias de decisão e localidades atendidas por Ricardo Princiotto.",
+    breadcrumbs: [home, { name: "Gestão condominial", path: "/gestao-condominial" }],
+    changefreq: "weekly",
+    priority: 0.8,
+  },
+  // Data-driven pages generated from src/content/collections.ts
+  ...allEntities.map((e): RouteEntry => ({
+    path: `/${e.id}`,
+    archetype: e.kind,
+    hasRouteFile: false,
+    entity: { collection: e.kind, id: e.id },
+    title: e.seoTitle,
+    description: e.seoDescription,
+    breadcrumbs:
+      e.kind === "location"
+        ? [home, regioes, { name: e.name, path: `/${e.id}` }]
+        : [home, gestao, { name: e.name, path: `/${e.id}` }],
+    ...(e.related ? { related: e.related } : {}),
+    ...(e.kind === "location" && e.nearby ? { nearby: e.nearby } : {}),
+    changefreq: "monthly",
+    priority: e.kind === "location" ? 0.7 : 0.6,
+  })),
 ];
 
 export const getRoute = (path: string) => routes.find((r) => r.path === path);
 export const isIndexable = (r: RouteEntry) => r.indexable !== false;
 export const indexableRoutes = () => routes.filter(isIndexable);
 export const dynamicRoutes = () => routes.filter((r) => !r.hasRouteFile);
-export const relatedRoutes = (path: string) =>
-  (getRoute(path)?.related ?? []).map(getRoute).filter((r): r is RouteEntry => !!r);
+const resolve = (paths: string[] = []) => paths.map(getRoute).filter((r): r is RouteEntry => !!r);
+/** Only links to routes that exist are returned — never a dead internal link. */
+export const relatedRoutes = (path: string) => resolve(getRoute(path)?.related);
+export const nearbyRoutes = (path: string) => resolve(getRoute(path)?.nearby);
 export const absoluteUrl = (path: string) => `${SITE_ORIGIN}${path === "/" ? "/" : path}`;
