@@ -11,7 +11,7 @@
 
 ## Estrutura do site
 
-- Existing routes in `src/routes/*` are thin wrappers that use `routeHead()` and render original pages from `src/pages/*`; new registered pages use `/$slug` and data-driven archetypes. Why: preserve migrated content while enabling new pages without duplicating layouts.
+- Existing routes in `src/routes/*` are thin wrappers that use `routeHead()` and render original pages from `src/pages/*`; each data-driven entity also gets a thin route file using `EntityPage`/`entityHead`, with `/$slug` kept only as fallback. Why: every page needs its own server-rendered title and must appear in the route list.
 - Header, Footer, WhatsApp e animações GSAP ficam em `src/components/site/Layout.tsx`, montado no `__root`. Motivo: layout único para todas as páginas.
 - Keep metadata, breadcrumbs, related links and the static page list in `src/content/routes.ts`, and fill entities in `src/content/collections.ts`. Why: one registry keeps discovery and page details consistent.
 - Prerender registered indexable pages and generate the sitemap through TanStack Start in `vite.config.ts`; host the `dist/client` output for static delivery. Why: each public URL needs its own HTML while preserving the editable app preview.

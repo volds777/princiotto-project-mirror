@@ -745,6 +745,50 @@ const data: A[] = [
     ],
     r: [R.seg, R.prest, R.gov], nb: [p("campinas"), p("indaiatuba")],
   },
+  {
+    slug: "parque-dos-principes", n: "Parque dos Príncipes", c: SP, g: SP,
+    t: "Síndico Profissional no Parque dos Príncipes",
+    d: "Gestão condominial no Parque dos Príncipes, na divisa de São Paulo com Osasco: segurança, conservação de áreas verdes e governança com associações de moradores.",
+    h: "Síndico profissional no Parque dos Príncipes",
+    ctx: [
+      "O Parque dos Príncipes é um bairro residencial da Zona Oeste de São Paulo, na divisa com Osasco, próximo ao Rio Pequeno, à Vila São Francisco e ao Butantã, com acesso pelas avenidas Escola Politécnica e Engenheiro Heitor Antônio Eiras Garcia.",
+      "Com ruas arborizadas, grandes áreas verdes e controle de acesso feito com guaritas e associações de moradores dos dois lados da divisa, o bairro funciona de forma parecida com um condomínio fechado. O comércio interno é pequeno, o que torna a logística de prestadores e entregas parte importante da rotina.",
+    ],
+    ch: [
+      "Segurança integrada às guaritas e à rotina das associações do bairro",
+      "Conservação de áreas verdes e jardins",
+      "Logística de entregas e prestadores em bairro com pouco comércio interno",
+      "Contratos de manutenção e portaria que precisam de acompanhamento",
+    ],
+    act: "Ricardo organiza a segurança do condomínio de forma alinhada à estrutura de acesso do bairro, mantém a conservação das áreas comuns em dia e acompanha contratos e prestadores presencialmente, com prestação de contas mensal.",
+    fq: [
+      ["Ricardo atende condomínios no Parque dos Príncipes?", "Sim. O bairro fica na divisa com Osasco, região de atendimento presencial de Ricardo."],
+      ["Como o condomínio se relaciona com as associações de moradores do bairro?", "A sindicatura mantém diálogo com as associações para alinhar procedimentos de acesso e segurança, sem misturar as responsabilidades de cada um."],
+    ],
+    r: [R.seg, R.manut, R.prest, R.contas], nb: [p("vila-sao-francisco"), p("butanta"), p("presidente-altino"), p("osasco")],
+  },
+  {
+    slug: "parque-sao-domingos", n: "Parque São Domingos", c: SP, g: SP,
+    t: "Síndico Profissional no Parque São Domingos, São Paulo",
+    d: "Sindicatura profissional para condomínios no entorno do Parque São Domingos, na Zona Noroeste de São Paulo: manutenção, segurança e prestação de contas.",
+    h: "Síndico profissional no Parque São Domingos",
+    ctx: [
+      "O Parque São Domingos é uma área verde pública da Zona Noroeste de São Paulo, com pista de caminhada, trilhas, quadras e bosque. Ao redor dele, bairros residenciais reúnem casas e condomínios verticais de perfil familiar.",
+      "Morar perto de uma área verde é um atrativo, mas os condomínios da região também lidam com terrenos acidentados, chuvas e a necessidade de manter drenagem, muros e áreas externas em bom estado.",
+    ],
+    ch: [
+      "Drenagem, muros e áreas externas em terrenos com desnível",
+      "Segurança de acesso em ruas residenciais",
+      "Manutenção preventiva em prédios de diferentes idades",
+      "Controle de custos e transparência nas contas",
+    ],
+    act: "Ricardo faz um diagnóstico das áreas externas e da estrutura, organiza um plano de manutenção preventiva por prioridades e revisa a segurança do condomínio, com relatórios mensais ao conselho.",
+    fq: [
+      ["Ricardo atende condomínios perto do Parque São Domingos?", "Sim, com atendimento presencial e visitas planejadas."],
+      ["Como prevenir problemas de drenagem e muros?", "Com vistorias periódicas, manutenção preventiva antes das chuvas e acompanhamento de profissionais técnicos quando necessário."],
+    ],
+    r: [R.manut, R.seg, R.contas], nb: [p("lapa"), p("barra-funda"), p("sao-paulo")],
+  },
 ];
 
 // Vila Andrade (entrada completa)

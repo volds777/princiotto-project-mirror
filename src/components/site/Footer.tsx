@@ -72,6 +72,8 @@ export const Footer = () => {
               <li><Link to="/sindico-profissional-alphaville" className="hover:text-accent">Alphaville</Link></li>
               <li><Link to="/sindico-profissional-santana-de-parnaiba" className="hover:text-accent">S. de Parnaíba</Link></li>
               <li><Link to="/sindico-profissional-sao-paulo" className="hover:text-accent">São Paulo</Link></li>
+              <li><Link to="/regioes" className="hover:text-accent">Todos os bairros</Link></li>
+              <li><Link to="/gestao-condominial" className="hover:text-accent">Guias e serviços</Link></li>
             </ul>
           </div>
 

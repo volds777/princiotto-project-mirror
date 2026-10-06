@@ -12,17 +12,120 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as SlugRouteImport } from './routes/$slug'
 import { Route as CasesRouteImport } from './routes/cases'
+import { Route as ComoContratarSindicoProfissionalRouteImport } from './routes/como-contratar-sindico-profissional'
+import { Route as ComoEscolherSindicoProfissionalRouteImport } from './routes/como-escolher-sindico-profissional'
+import { Route as ComoOConselhoPodeContratarSindicoProfissionalRouteImport } from './routes/como-o-conselho-pode-contratar-sindico-profissional'
+import { Route as ComplianceCondominialRouteImport } from './routes/compliance-condominial'
+import { Route as ComunicacaoComCondominosRouteImport } from './routes/comunicacao-com-condominos'
+import { Route as CondominioEmCriseRouteImport } from './routes/condominio-em-crise'
+import { Route as CondominioSemCandidatoASindicoRouteImport } from './routes/condominio-sem-candidato-a-sindico'
+import { Route as ConducaoDeAssembleiasRouteImport } from './routes/conducao-de-assembleias'
 import { Route as ContatoRouteImport } from './routes/contato'
+import { Route as ContratacaoDeSindicoProfissionalEmAssembleiaRouteImport } from './routes/contratacao-de-sindico-profissional-em-assembleia'
+import { Route as DiagnosticoCondominialRouteImport } from './routes/diagnostico-condominial'
 import { Route as DiferenciaisRouteImport } from './routes/diferenciais'
+import { Route as EleicaoDeSindicoProfissionalRouteImport } from './routes/eleicao-de-sindico-profissional'
+import { Route as FaltaDeTransparenciaNoCondominioRouteImport } from './routes/falta-de-transparencia-no-condominio'
+import { Route as GestaoAdministrativaDeCondominioRouteImport } from './routes/gestao-administrativa-de-condominio'
 import { Route as GestaoCondominialRouteImport } from './routes/gestao-condominial'
+import { Route as GestaoDeContratosDoCondominioRouteImport } from './routes/gestao-de-contratos-do-condominio'
+import { Route as GestaoDeInadimplenciaCondominialRouteImport } from './routes/gestao-de-inadimplencia-condominial'
+import { Route as GestaoDePrestadoresEEquipesRouteImport } from './routes/gestao-de-prestadores-e-equipes'
+import { Route as GovernancaCondominialRouteImport } from './routes/governanca-condominial'
+import { Route as ImplantacaoDeCondominioRouteImport } from './routes/implantacao-de-condominio'
+import { Route as LegalizacaoDeCondominioRouteImport } from './routes/legalizacao-de-condominio'
+import { Route as ManutencaoPreventivaCondominialRouteImport } from './routes/manutencao-preventiva-condominial'
+import { Route as MediacaoDeConflitosCondominiaisRouteImport } from './routes/mediacao-de-conflitos-condominiais'
+import { Route as ModernizacaoDeCondominioRouteImport } from './routes/modernizacao-de-condominio'
+import { Route as OQueFazUmSindicoProfissionalRouteImport } from './routes/o-que-faz-um-sindico-profissional'
+import { Route as OrientacaoParaSindicoMoradorRouteImport } from './routes/orientacao-para-sindico-morador'
+import { Route as PlanejamentoPlurianualCondominioRouteImport } from './routes/planejamento-plurianual-condominio'
+import { Route as PrestacaoDeContasCondominialRouteImport } from './routes/prestacao-de-contas-condominial'
+import { Route as QuandoTrocarOSindicoRouteImport } from './routes/quando-trocar-o-sindico'
+import { Route as RecuperacaoFinanceiraDeCondominioRouteImport } from './routes/recuperacao-financeira-de-condominio'
 import { Route as RegioesRouteImport } from './routes/regioes'
+import { Route as RelacaoSindicoProfissionalEConselhoRouteImport } from './routes/relacao-sindico-profissional-e-conselho'
+import { Route as ResponsabilidadesDoSindicoProfissionalRouteImport } from './routes/responsabilidades-do-sindico-profissional'
+import { Route as SegurancaPatrimonialCondominioRouteImport } from './routes/seguranca-patrimonial-condominio'
 import { Route as ServicosRouteImport } from './routes/servicos'
+import { Route as SindicaturaProfissionalRouteImport } from './routes/sindicatura-profissional'
+import { Route as SindicoParaCondominioAltoPadraoRouteImport } from './routes/sindico-para-condominio-alto-padrao'
+import { Route as SindicoParaCondominioAntigoRouteImport } from './routes/sindico-para-condominio-antigo'
+import { Route as SindicoParaCondominioClubeRouteImport } from './routes/sindico-para-condominio-clube'
+import { Route as SindicoParaCondominioComercialRouteImport } from './routes/sindico-para-condominio-comercial'
+import { Route as SindicoParaCondominioGrandePorteRouteImport } from './routes/sindico-para-condominio-grande-porte'
+import { Route as SindicoParaCondominioHorizontalRouteImport } from './routes/sindico-para-condominio-horizontal'
+import { Route as SindicoParaCondominioMistoRouteImport } from './routes/sindico-para-condominio-misto'
+import { Route as SindicoParaCondominioMultiplasTorresRouteImport } from './routes/sindico-para-condominio-multiplas-torres'
+import { Route as SindicoParaCondominioOperacaoComplexaRouteImport } from './routes/sindico-para-condominio-operacao-complexa'
+import { Route as SindicoParaCondominioResidencialRouteImport } from './routes/sindico-para-condominio-residencial'
+import { Route as SindicoProfissionalAldeiaDaSerraRouteImport } from './routes/sindico-profissional-aldeia-da-serra'
 import { Route as SindicoProfissionalAlphavilleRouteImport } from './routes/sindico-profissional-alphaville'
+import { Route as SindicoProfissionalAltoDaBoaVistaRouteImport } from './routes/sindico-profissional-alto-da-boa-vista'
+import { Route as SindicoProfissionalAltoDaLapaRouteImport } from './routes/sindico-profissional-alto-da-lapa'
+import { Route as SindicoProfissionalAltoDePinheirosRouteImport } from './routes/sindico-profissional-alto-de-pinheiros'
+import { Route as SindicoProfissionalBarraFundaRouteImport } from './routes/sindico-profissional-barra-funda'
 import { Route as SindicoProfissionalBarueriRouteImport } from './routes/sindico-profissional-barueri'
+import { Route as SindicoProfissionalBelaVistaRouteImport } from './routes/sindico-profissional-bela-vista'
+import { Route as SindicoProfissionalBelaVistaOsascoRouteImport } from './routes/sindico-profissional-bela-vista-osasco'
+import { Route as SindicoProfissionalBrooklinRouteImport } from './routes/sindico-profissional-brooklin'
+import { Route as SindicoProfissionalBussocabaRouteImport } from './routes/sindico-profissional-bussocaba'
+import { Route as SindicoProfissionalButantaRouteImport } from './routes/sindico-profissional-butanta'
+import { Route as SindicoProfissionalCampinasRouteImport } from './routes/sindico-profissional-campinas'
+import { Route as SindicoProfissionalCampoBeloRouteImport } from './routes/sindico-profissional-campo-belo'
+import { Route as SindicoProfissionalCarapicuibaRouteImport } from './routes/sindico-profissional-carapicuiba'
+import { Route as SindicoProfissionalCentroDeBarueriRouteImport } from './routes/sindico-profissional-centro-de-barueri'
+import { Route as SindicoProfissionalCentroDeOsascoRouteImport } from './routes/sindico-profissional-centro-de-osasco'
+import { Route as SindicoProfissionalCentroDeSantanaDeParnaibaRouteImport } from './routes/sindico-profissional-centro-de-santana-de-parnaiba'
+import { Route as SindicoProfissionalFazendinhaRouteImport } from './routes/sindico-profissional-fazendinha'
+import { Route as SindicoProfissionalGranjaVianaRouteImport } from './routes/sindico-profissional-granja-viana'
+import { Route as SindicoProfissionalHigienopolisRouteImport } from './routes/sindico-profissional-higienopolis'
+import { Route as SindicoProfissionalIbirapueraRouteImport } from './routes/sindico-profissional-ibirapuera'
+import { Route as SindicoProfissionalIndaiatubaRouteImport } from './routes/sindico-profissional-indaiatuba'
+import { Route as SindicoProfissionalItaimBibiRouteImport } from './routes/sindico-profissional-itaim-bibi'
+import { Route as SindicoProfissionalJaguaribeRouteImport } from './routes/sindico-profissional-jaguaribe'
+import { Route as SindicoProfissionalJardimAmericaRouteImport } from './routes/sindico-profissional-jardim-america'
+import { Route as SindicoProfissionalJardimEuropaRouteImport } from './routes/sindico-profissional-jardim-europa'
+import { Route as SindicoProfissionalJardimPaulistaRouteImport } from './routes/sindico-profissional-jardim-paulista'
+import { Route as SindicoProfissionalJardinsRouteImport } from './routes/sindico-profissional-jardins'
+import { Route as SindicoProfissionalKm18RouteImport } from './routes/sindico-profissional-km-18'
+import { Route as SindicoProfissionalLapaRouteImport } from './routes/sindico-profissional-lapa'
+import { Route as SindicoProfissionalMoemaRouteImport } from './routes/sindico-profissional-moema'
 import { Route as SindicoProfissionalOsascoRouteImport } from './routes/sindico-profissional-osasco'
+import { Route as SindicoProfissionalOuSindicoMoradorRouteImport } from './routes/sindico-profissional-ou-sindico-morador'
+import { Route as SindicoProfissionalParaAdministradorasRouteImport } from './routes/sindico-profissional-para-administradoras'
+import { Route as SindicoProfissionalParaConselhoFiscalRouteImport } from './routes/sindico-profissional-para-conselho-fiscal'
+import { Route as SindicoProfissionalParqueDosPrincipesRouteImport } from './routes/sindico-profissional-parque-dos-principes'
+import { Route as SindicoProfissionalParqueSaoDomingosRouteImport } from './routes/sindico-profissional-parque-sao-domingos'
+import { Route as SindicoProfissionalPaulistaRouteImport } from './routes/sindico-profissional-paulista'
+import { Route as SindicoProfissionalPerdizesRouteImport } from './routes/sindico-profissional-perdizes'
+import { Route as SindicoProfissionalPinheirosRouteImport } from './routes/sindico-profissional-pinheiros'
+import { Route as SindicoProfissionalPompeiaRouteImport } from './routes/sindico-profissional-pompeia'
+import { Route as SindicoProfissionalPresidenteAltinoRouteImport } from './routes/sindico-profissional-presidente-altino'
+import { Route as SindicoProfissionalQuitaunaRouteImport } from './routes/sindico-profissional-quitauna'
 import { Route as SindicoProfissionalSantanaDeParnaibaRouteImport } from './routes/sindico-profissional-santana-de-parnaiba'
 import { Route as SindicoProfissionalSaoPauloRouteImport } from './routes/sindico-profissional-sao-paulo'
+import { Route as SindicoProfissionalSumareRouteImport } from './routes/sindico-profissional-sumare'
+import { Route as SindicoProfissionalTamboreRouteImport } from './routes/sindico-profissional-tambore'
+import { Route as SindicoProfissionalVilaAndradeRouteImport } from './routes/sindico-profissional-vila-andrade'
+import { Route as SindicoProfissionalVilaCampesinaRouteImport } from './routes/sindico-profissional-vila-campesina'
+import { Route as SindicoProfissionalVilaClementinoRouteImport } from './routes/sindico-profissional-vila-clementino'
+import { Route as SindicoProfissionalVilaLeopoldinaRouteImport } from './routes/sindico-profissional-vila-leopoldina'
+import { Route as SindicoProfissionalVilaMadalenaRouteImport } from './routes/sindico-profissional-vila-madalena'
+import { Route as SindicoProfissionalVilaMarianaRouteImport } from './routes/sindico-profissional-vila-mariana'
+import { Route as SindicoProfissionalVilaMascoteRouteImport } from './routes/sindico-profissional-vila-mascote'
+import { Route as SindicoProfissionalVilaNovaConceicaoRouteImport } from './routes/sindico-profissional-vila-nova-conceicao'
+import { Route as SindicoProfissionalVilaOlimpiaRouteImport } from './routes/sindico-profissional-vila-olimpia'
+import { Route as SindicoProfissionalVilaRomanaRouteImport } from './routes/sindico-profissional-vila-romana'
+import { Route as SindicoProfissionalVilaSaoFranciscoRouteImport } from './routes/sindico-profissional-vila-sao-francisco'
+import { Route as SindicoProfissionalVilaYaraRouteImport } from './routes/sindico-profissional-vila-yara'
+import { Route as SindicoProfissionalVinhedoRouteImport } from './routes/sindico-profissional-vinhedo'
 import { Route as SobreRouteImport } from './routes/sobre'
+import { Route as TransicaoSindicoMoradorParaProfissionalRouteImport } from './routes/transicao-sindico-morador-para-profissional'
+import { Route as TrocaDeSindicoRouteImport } from './routes/troca-de-sindico'
+import { Route as ValorizacaoPatrimonialCondominioRouteImport } from './routes/valorizacao-patrimonial-condominio'
+import { Route as VantagensDoSindicoProfissionalRouteImport } from './routes/vantagens-do-sindico-profissional'
+import { Route as VisitasDoSindicoProfissionalRouteImport } from './routes/visitas-do-sindico-profissional'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -39,9 +142,65 @@ const CasesRoute = CasesRouteImport.update({
   path: '/cases',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ComoContratarSindicoProfissionalRoute =
+  ComoContratarSindicoProfissionalRouteImport.update({
+    id: '/como-contratar-sindico-profissional',
+    path: '/como-contratar-sindico-profissional',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ComoEscolherSindicoProfissionalRoute =
+  ComoEscolherSindicoProfissionalRouteImport.update({
+    id: '/como-escolher-sindico-profissional',
+    path: '/como-escolher-sindico-profissional',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ComoOConselhoPodeContratarSindicoProfissionalRoute =
+  ComoOConselhoPodeContratarSindicoProfissionalRouteImport.update({
+    id: '/como-o-conselho-pode-contratar-sindico-profissional',
+    path: '/como-o-conselho-pode-contratar-sindico-profissional',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ComplianceCondominialRoute = ComplianceCondominialRouteImport.update({
+  id: '/compliance-condominial',
+  path: '/compliance-condominial',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ComunicacaoComCondominosRoute =
+  ComunicacaoComCondominosRouteImport.update({
+    id: '/comunicacao-com-condominos',
+    path: '/comunicacao-com-condominos',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const CondominioEmCriseRoute = CondominioEmCriseRouteImport.update({
+  id: '/condominio-em-crise',
+  path: '/condominio-em-crise',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CondominioSemCandidatoASindicoRoute =
+  CondominioSemCandidatoASindicoRouteImport.update({
+    id: '/condominio-sem-candidato-a-sindico',
+    path: '/condominio-sem-candidato-a-sindico',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ConducaoDeAssembleiasRoute = ConducaoDeAssembleiasRouteImport.update({
+  id: '/conducao-de-assembleias',
+  path: '/conducao-de-assembleias',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ContatoRoute = ContatoRouteImport.update({
   id: '/contato',
   path: '/contato',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContratacaoDeSindicoProfissionalEmAssembleiaRoute =
+  ContratacaoDeSindicoProfissionalEmAssembleiaRouteImport.update({
+    id: '/contratacao-de-sindico-profissional-em-assembleia',
+    path: '/contratacao-de-sindico-profissional-em-assembleia',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DiagnosticoCondominialRoute = DiagnosticoCondominialRouteImport.update({
+  id: '/diagnostico-condominial',
+  path: '/diagnostico-condominial',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DiferenciaisRoute = DiferenciaisRouteImport.update({
@@ -49,25 +208,242 @@ const DiferenciaisRoute = DiferenciaisRouteImport.update({
   path: '/diferenciais',
   getParentRoute: () => rootRouteImport,
 } as any)
+const EleicaoDeSindicoProfissionalRoute =
+  EleicaoDeSindicoProfissionalRouteImport.update({
+    id: '/eleicao-de-sindico-profissional',
+    path: '/eleicao-de-sindico-profissional',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const FaltaDeTransparenciaNoCondominioRoute =
+  FaltaDeTransparenciaNoCondominioRouteImport.update({
+    id: '/falta-de-transparencia-no-condominio',
+    path: '/falta-de-transparencia-no-condominio',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const GestaoAdministrativaDeCondominioRoute =
+  GestaoAdministrativaDeCondominioRouteImport.update({
+    id: '/gestao-administrativa-de-condominio',
+    path: '/gestao-administrativa-de-condominio',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const GestaoCondominialRoute = GestaoCondominialRouteImport.update({
   id: '/gestao-condominial',
   path: '/gestao-condominial',
   getParentRoute: () => rootRouteImport,
 } as any)
+const GestaoDeContratosDoCondominioRoute =
+  GestaoDeContratosDoCondominioRouteImport.update({
+    id: '/gestao-de-contratos-do-condominio',
+    path: '/gestao-de-contratos-do-condominio',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const GestaoDeInadimplenciaCondominialRoute =
+  GestaoDeInadimplenciaCondominialRouteImport.update({
+    id: '/gestao-de-inadimplencia-condominial',
+    path: '/gestao-de-inadimplencia-condominial',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const GestaoDePrestadoresEEquipesRoute =
+  GestaoDePrestadoresEEquipesRouteImport.update({
+    id: '/gestao-de-prestadores-e-equipes',
+    path: '/gestao-de-prestadores-e-equipes',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const GovernancaCondominialRoute = GovernancaCondominialRouteImport.update({
+  id: '/governanca-condominial',
+  path: '/governanca-condominial',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ImplantacaoDeCondominioRoute = ImplantacaoDeCondominioRouteImport.update({
+  id: '/implantacao-de-condominio',
+  path: '/implantacao-de-condominio',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LegalizacaoDeCondominioRoute = LegalizacaoDeCondominioRouteImport.update({
+  id: '/legalizacao-de-condominio',
+  path: '/legalizacao-de-condominio',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ManutencaoPreventivaCondominialRoute =
+  ManutencaoPreventivaCondominialRouteImport.update({
+    id: '/manutencao-preventiva-condominial',
+    path: '/manutencao-preventiva-condominial',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const MediacaoDeConflitosCondominiaisRoute =
+  MediacaoDeConflitosCondominiaisRouteImport.update({
+    id: '/mediacao-de-conflitos-condominiais',
+    path: '/mediacao-de-conflitos-condominiais',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ModernizacaoDeCondominioRoute =
+  ModernizacaoDeCondominioRouteImport.update({
+    id: '/modernizacao-de-condominio',
+    path: '/modernizacao-de-condominio',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const OQueFazUmSindicoProfissionalRoute =
+  OQueFazUmSindicoProfissionalRouteImport.update({
+    id: '/o-que-faz-um-sindico-profissional',
+    path: '/o-que-faz-um-sindico-profissional',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const OrientacaoParaSindicoMoradorRoute =
+  OrientacaoParaSindicoMoradorRouteImport.update({
+    id: '/orientacao-para-sindico-morador',
+    path: '/orientacao-para-sindico-morador',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const PlanejamentoPlurianualCondominioRoute =
+  PlanejamentoPlurianualCondominioRouteImport.update({
+    id: '/planejamento-plurianual-condominio',
+    path: '/planejamento-plurianual-condominio',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const PrestacaoDeContasCondominialRoute =
+  PrestacaoDeContasCondominialRouteImport.update({
+    id: '/prestacao-de-contas-condominial',
+    path: '/prestacao-de-contas-condominial',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const QuandoTrocarOSindicoRoute = QuandoTrocarOSindicoRouteImport.update({
+  id: '/quando-trocar-o-sindico',
+  path: '/quando-trocar-o-sindico',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RecuperacaoFinanceiraDeCondominioRoute =
+  RecuperacaoFinanceiraDeCondominioRouteImport.update({
+    id: '/recuperacao-financeira-de-condominio',
+    path: '/recuperacao-financeira-de-condominio',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const RegioesRoute = RegioesRouteImport.update({
   id: '/regioes',
   path: '/regioes',
   getParentRoute: () => rootRouteImport,
 } as any)
+const RelacaoSindicoProfissionalEConselhoRoute =
+  RelacaoSindicoProfissionalEConselhoRouteImport.update({
+    id: '/relacao-sindico-profissional-e-conselho',
+    path: '/relacao-sindico-profissional-e-conselho',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ResponsabilidadesDoSindicoProfissionalRoute =
+  ResponsabilidadesDoSindicoProfissionalRouteImport.update({
+    id: '/responsabilidades-do-sindico-profissional',
+    path: '/responsabilidades-do-sindico-profissional',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SegurancaPatrimonialCondominioRoute =
+  SegurancaPatrimonialCondominioRouteImport.update({
+    id: '/seguranca-patrimonial-condominio',
+    path: '/seguranca-patrimonial-condominio',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const ServicosRoute = ServicosRouteImport.update({
   id: '/servicos',
   path: '/servicos',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SindicaturaProfissionalRoute = SindicaturaProfissionalRouteImport.update({
+  id: '/sindicatura-profissional',
+  path: '/sindicatura-profissional',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SindicoParaCondominioAltoPadraoRoute =
+  SindicoParaCondominioAltoPadraoRouteImport.update({
+    id: '/sindico-para-condominio-alto-padrao',
+    path: '/sindico-para-condominio-alto-padrao',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoParaCondominioAntigoRoute =
+  SindicoParaCondominioAntigoRouteImport.update({
+    id: '/sindico-para-condominio-antigo',
+    path: '/sindico-para-condominio-antigo',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoParaCondominioClubeRoute =
+  SindicoParaCondominioClubeRouteImport.update({
+    id: '/sindico-para-condominio-clube',
+    path: '/sindico-para-condominio-clube',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoParaCondominioComercialRoute =
+  SindicoParaCondominioComercialRouteImport.update({
+    id: '/sindico-para-condominio-comercial',
+    path: '/sindico-para-condominio-comercial',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoParaCondominioGrandePorteRoute =
+  SindicoParaCondominioGrandePorteRouteImport.update({
+    id: '/sindico-para-condominio-grande-porte',
+    path: '/sindico-para-condominio-grande-porte',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoParaCondominioHorizontalRoute =
+  SindicoParaCondominioHorizontalRouteImport.update({
+    id: '/sindico-para-condominio-horizontal',
+    path: '/sindico-para-condominio-horizontal',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoParaCondominioMistoRoute =
+  SindicoParaCondominioMistoRouteImport.update({
+    id: '/sindico-para-condominio-misto',
+    path: '/sindico-para-condominio-misto',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoParaCondominioMultiplasTorresRoute =
+  SindicoParaCondominioMultiplasTorresRouteImport.update({
+    id: '/sindico-para-condominio-multiplas-torres',
+    path: '/sindico-para-condominio-multiplas-torres',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoParaCondominioOperacaoComplexaRoute =
+  SindicoParaCondominioOperacaoComplexaRouteImport.update({
+    id: '/sindico-para-condominio-operacao-complexa',
+    path: '/sindico-para-condominio-operacao-complexa',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoParaCondominioResidencialRoute =
+  SindicoParaCondominioResidencialRouteImport.update({
+    id: '/sindico-para-condominio-residencial',
+    path: '/sindico-para-condominio-residencial',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalAldeiaDaSerraRoute =
+  SindicoProfissionalAldeiaDaSerraRouteImport.update({
+    id: '/sindico-profissional-aldeia-da-serra',
+    path: '/sindico-profissional-aldeia-da-serra',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const SindicoProfissionalAlphavilleRoute =
   SindicoProfissionalAlphavilleRouteImport.update({
     id: '/sindico-profissional-alphaville',
     path: '/sindico-profissional-alphaville',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalAltoDaBoaVistaRoute =
+  SindicoProfissionalAltoDaBoaVistaRouteImport.update({
+    id: '/sindico-profissional-alto-da-boa-vista',
+    path: '/sindico-profissional-alto-da-boa-vista',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalAltoDaLapaRoute =
+  SindicoProfissionalAltoDaLapaRouteImport.update({
+    id: '/sindico-profissional-alto-da-lapa',
+    path: '/sindico-profissional-alto-da-lapa',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalAltoDePinheirosRoute =
+  SindicoProfissionalAltoDePinheirosRouteImport.update({
+    id: '/sindico-profissional-alto-de-pinheiros',
+    path: '/sindico-profissional-alto-de-pinheiros',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalBarraFundaRoute =
+  SindicoProfissionalBarraFundaRouteImport.update({
+    id: '/sindico-profissional-barra-funda',
+    path: '/sindico-profissional-barra-funda',
     getParentRoute: () => rootRouteImport,
   } as any)
 const SindicoProfissionalBarueriRoute =
@@ -76,10 +452,224 @@ const SindicoProfissionalBarueriRoute =
     path: '/sindico-profissional-barueri',
     getParentRoute: () => rootRouteImport,
   } as any)
+const SindicoProfissionalBelaVistaRoute =
+  SindicoProfissionalBelaVistaRouteImport.update({
+    id: '/sindico-profissional-bela-vista',
+    path: '/sindico-profissional-bela-vista',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalBelaVistaOsascoRoute =
+  SindicoProfissionalBelaVistaOsascoRouteImport.update({
+    id: '/sindico-profissional-bela-vista-osasco',
+    path: '/sindico-profissional-bela-vista-osasco',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalBrooklinRoute =
+  SindicoProfissionalBrooklinRouteImport.update({
+    id: '/sindico-profissional-brooklin',
+    path: '/sindico-profissional-brooklin',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalBussocabaRoute =
+  SindicoProfissionalBussocabaRouteImport.update({
+    id: '/sindico-profissional-bussocaba',
+    path: '/sindico-profissional-bussocaba',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalButantaRoute =
+  SindicoProfissionalButantaRouteImport.update({
+    id: '/sindico-profissional-butanta',
+    path: '/sindico-profissional-butanta',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalCampinasRoute =
+  SindicoProfissionalCampinasRouteImport.update({
+    id: '/sindico-profissional-campinas',
+    path: '/sindico-profissional-campinas',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalCampoBeloRoute =
+  SindicoProfissionalCampoBeloRouteImport.update({
+    id: '/sindico-profissional-campo-belo',
+    path: '/sindico-profissional-campo-belo',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalCarapicuibaRoute =
+  SindicoProfissionalCarapicuibaRouteImport.update({
+    id: '/sindico-profissional-carapicuiba',
+    path: '/sindico-profissional-carapicuiba',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalCentroDeBarueriRoute =
+  SindicoProfissionalCentroDeBarueriRouteImport.update({
+    id: '/sindico-profissional-centro-de-barueri',
+    path: '/sindico-profissional-centro-de-barueri',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalCentroDeOsascoRoute =
+  SindicoProfissionalCentroDeOsascoRouteImport.update({
+    id: '/sindico-profissional-centro-de-osasco',
+    path: '/sindico-profissional-centro-de-osasco',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalCentroDeSantanaDeParnaibaRoute =
+  SindicoProfissionalCentroDeSantanaDeParnaibaRouteImport.update({
+    id: '/sindico-profissional-centro-de-santana-de-parnaiba',
+    path: '/sindico-profissional-centro-de-santana-de-parnaiba',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalFazendinhaRoute =
+  SindicoProfissionalFazendinhaRouteImport.update({
+    id: '/sindico-profissional-fazendinha',
+    path: '/sindico-profissional-fazendinha',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalGranjaVianaRoute =
+  SindicoProfissionalGranjaVianaRouteImport.update({
+    id: '/sindico-profissional-granja-viana',
+    path: '/sindico-profissional-granja-viana',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalHigienopolisRoute =
+  SindicoProfissionalHigienopolisRouteImport.update({
+    id: '/sindico-profissional-higienopolis',
+    path: '/sindico-profissional-higienopolis',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalIbirapueraRoute =
+  SindicoProfissionalIbirapueraRouteImport.update({
+    id: '/sindico-profissional-ibirapuera',
+    path: '/sindico-profissional-ibirapuera',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalIndaiatubaRoute =
+  SindicoProfissionalIndaiatubaRouteImport.update({
+    id: '/sindico-profissional-indaiatuba',
+    path: '/sindico-profissional-indaiatuba',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalItaimBibiRoute =
+  SindicoProfissionalItaimBibiRouteImport.update({
+    id: '/sindico-profissional-itaim-bibi',
+    path: '/sindico-profissional-itaim-bibi',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalJaguaribeRoute =
+  SindicoProfissionalJaguaribeRouteImport.update({
+    id: '/sindico-profissional-jaguaribe',
+    path: '/sindico-profissional-jaguaribe',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalJardimAmericaRoute =
+  SindicoProfissionalJardimAmericaRouteImport.update({
+    id: '/sindico-profissional-jardim-america',
+    path: '/sindico-profissional-jardim-america',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalJardimEuropaRoute =
+  SindicoProfissionalJardimEuropaRouteImport.update({
+    id: '/sindico-profissional-jardim-europa',
+    path: '/sindico-profissional-jardim-europa',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalJardimPaulistaRoute =
+  SindicoProfissionalJardimPaulistaRouteImport.update({
+    id: '/sindico-profissional-jardim-paulista',
+    path: '/sindico-profissional-jardim-paulista',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalJardinsRoute =
+  SindicoProfissionalJardinsRouteImport.update({
+    id: '/sindico-profissional-jardins',
+    path: '/sindico-profissional-jardins',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalKm18Route = SindicoProfissionalKm18RouteImport.update({
+  id: '/sindico-profissional-km-18',
+  path: '/sindico-profissional-km-18',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SindicoProfissionalLapaRoute = SindicoProfissionalLapaRouteImport.update({
+  id: '/sindico-profissional-lapa',
+  path: '/sindico-profissional-lapa',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SindicoProfissionalMoemaRoute =
+  SindicoProfissionalMoemaRouteImport.update({
+    id: '/sindico-profissional-moema',
+    path: '/sindico-profissional-moema',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const SindicoProfissionalOsascoRoute =
   SindicoProfissionalOsascoRouteImport.update({
     id: '/sindico-profissional-osasco',
     path: '/sindico-profissional-osasco',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalOuSindicoMoradorRoute =
+  SindicoProfissionalOuSindicoMoradorRouteImport.update({
+    id: '/sindico-profissional-ou-sindico-morador',
+    path: '/sindico-profissional-ou-sindico-morador',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalParaAdministradorasRoute =
+  SindicoProfissionalParaAdministradorasRouteImport.update({
+    id: '/sindico-profissional-para-administradoras',
+    path: '/sindico-profissional-para-administradoras',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalParaConselhoFiscalRoute =
+  SindicoProfissionalParaConselhoFiscalRouteImport.update({
+    id: '/sindico-profissional-para-conselho-fiscal',
+    path: '/sindico-profissional-para-conselho-fiscal',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalParqueDosPrincipesRoute =
+  SindicoProfissionalParqueDosPrincipesRouteImport.update({
+    id: '/sindico-profissional-parque-dos-principes',
+    path: '/sindico-profissional-parque-dos-principes',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalParqueSaoDomingosRoute =
+  SindicoProfissionalParqueSaoDomingosRouteImport.update({
+    id: '/sindico-profissional-parque-sao-domingos',
+    path: '/sindico-profissional-parque-sao-domingos',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalPaulistaRoute =
+  SindicoProfissionalPaulistaRouteImport.update({
+    id: '/sindico-profissional-paulista',
+    path: '/sindico-profissional-paulista',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalPerdizesRoute =
+  SindicoProfissionalPerdizesRouteImport.update({
+    id: '/sindico-profissional-perdizes',
+    path: '/sindico-profissional-perdizes',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalPinheirosRoute =
+  SindicoProfissionalPinheirosRouteImport.update({
+    id: '/sindico-profissional-pinheiros',
+    path: '/sindico-profissional-pinheiros',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalPompeiaRoute =
+  SindicoProfissionalPompeiaRouteImport.update({
+    id: '/sindico-profissional-pompeia',
+    path: '/sindico-profissional-pompeia',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalPresidenteAltinoRoute =
+  SindicoProfissionalPresidenteAltinoRouteImport.update({
+    id: '/sindico-profissional-presidente-altino',
+    path: '/sindico-profissional-presidente-altino',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalQuitaunaRoute =
+  SindicoProfissionalQuitaunaRouteImport.update({
+    id: '/sindico-profissional-quitauna',
+    path: '/sindico-profissional-quitauna',
     getParentRoute: () => rootRouteImport,
   } as any)
 const SindicoProfissionalSantanaDeParnaibaRoute =
@@ -94,60 +684,488 @@ const SindicoProfissionalSaoPauloRoute =
     path: '/sindico-profissional-sao-paulo',
     getParentRoute: () => rootRouteImport,
   } as any)
+const SindicoProfissionalSumareRoute =
+  SindicoProfissionalSumareRouteImport.update({
+    id: '/sindico-profissional-sumare',
+    path: '/sindico-profissional-sumare',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalTamboreRoute =
+  SindicoProfissionalTamboreRouteImport.update({
+    id: '/sindico-profissional-tambore',
+    path: '/sindico-profissional-tambore',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalVilaAndradeRoute =
+  SindicoProfissionalVilaAndradeRouteImport.update({
+    id: '/sindico-profissional-vila-andrade',
+    path: '/sindico-profissional-vila-andrade',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalVilaCampesinaRoute =
+  SindicoProfissionalVilaCampesinaRouteImport.update({
+    id: '/sindico-profissional-vila-campesina',
+    path: '/sindico-profissional-vila-campesina',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalVilaClementinoRoute =
+  SindicoProfissionalVilaClementinoRouteImport.update({
+    id: '/sindico-profissional-vila-clementino',
+    path: '/sindico-profissional-vila-clementino',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalVilaLeopoldinaRoute =
+  SindicoProfissionalVilaLeopoldinaRouteImport.update({
+    id: '/sindico-profissional-vila-leopoldina',
+    path: '/sindico-profissional-vila-leopoldina',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalVilaMadalenaRoute =
+  SindicoProfissionalVilaMadalenaRouteImport.update({
+    id: '/sindico-profissional-vila-madalena',
+    path: '/sindico-profissional-vila-madalena',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalVilaMarianaRoute =
+  SindicoProfissionalVilaMarianaRouteImport.update({
+    id: '/sindico-profissional-vila-mariana',
+    path: '/sindico-profissional-vila-mariana',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalVilaMascoteRoute =
+  SindicoProfissionalVilaMascoteRouteImport.update({
+    id: '/sindico-profissional-vila-mascote',
+    path: '/sindico-profissional-vila-mascote',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalVilaNovaConceicaoRoute =
+  SindicoProfissionalVilaNovaConceicaoRouteImport.update({
+    id: '/sindico-profissional-vila-nova-conceicao',
+    path: '/sindico-profissional-vila-nova-conceicao',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalVilaOlimpiaRoute =
+  SindicoProfissionalVilaOlimpiaRouteImport.update({
+    id: '/sindico-profissional-vila-olimpia',
+    path: '/sindico-profissional-vila-olimpia',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalVilaRomanaRoute =
+  SindicoProfissionalVilaRomanaRouteImport.update({
+    id: '/sindico-profissional-vila-romana',
+    path: '/sindico-profissional-vila-romana',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalVilaSaoFranciscoRoute =
+  SindicoProfissionalVilaSaoFranciscoRouteImport.update({
+    id: '/sindico-profissional-vila-sao-francisco',
+    path: '/sindico-profissional-vila-sao-francisco',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalVilaYaraRoute =
+  SindicoProfissionalVilaYaraRouteImport.update({
+    id: '/sindico-profissional-vila-yara',
+    path: '/sindico-profissional-vila-yara',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SindicoProfissionalVinhedoRoute =
+  SindicoProfissionalVinhedoRouteImport.update({
+    id: '/sindico-profissional-vinhedo',
+    path: '/sindico-profissional-vinhedo',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const SobreRoute = SobreRouteImport.update({
   id: '/sobre',
   path: '/sobre',
   getParentRoute: () => rootRouteImport,
 } as any)
+const TransicaoSindicoMoradorParaProfissionalRoute =
+  TransicaoSindicoMoradorParaProfissionalRouteImport.update({
+    id: '/transicao-sindico-morador-para-profissional',
+    path: '/transicao-sindico-morador-para-profissional',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const TrocaDeSindicoRoute = TrocaDeSindicoRouteImport.update({
+  id: '/troca-de-sindico',
+  path: '/troca-de-sindico',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ValorizacaoPatrimonialCondominioRoute =
+  ValorizacaoPatrimonialCondominioRouteImport.update({
+    id: '/valorizacao-patrimonial-condominio',
+    path: '/valorizacao-patrimonial-condominio',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const VantagensDoSindicoProfissionalRoute =
+  VantagensDoSindicoProfissionalRouteImport.update({
+    id: '/vantagens-do-sindico-profissional',
+    path: '/vantagens-do-sindico-profissional',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const VisitasDoSindicoProfissionalRoute =
+  VisitasDoSindicoProfissionalRouteImport.update({
+    id: '/visitas-do-sindico-profissional',
+    path: '/visitas-do-sindico-profissional',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/$slug': typeof SlugRoute
   '/cases': typeof CasesRoute
+  '/como-contratar-sindico-profissional': typeof ComoContratarSindicoProfissionalRoute
+  '/como-escolher-sindico-profissional': typeof ComoEscolherSindicoProfissionalRoute
+  '/como-o-conselho-pode-contratar-sindico-profissional': typeof ComoOConselhoPodeContratarSindicoProfissionalRoute
+  '/compliance-condominial': typeof ComplianceCondominialRoute
+  '/comunicacao-com-condominos': typeof ComunicacaoComCondominosRoute
+  '/condominio-em-crise': typeof CondominioEmCriseRoute
+  '/condominio-sem-candidato-a-sindico': typeof CondominioSemCandidatoASindicoRoute
+  '/conducao-de-assembleias': typeof ConducaoDeAssembleiasRoute
   '/contato': typeof ContatoRoute
+  '/contratacao-de-sindico-profissional-em-assembleia': typeof ContratacaoDeSindicoProfissionalEmAssembleiaRoute
+  '/diagnostico-condominial': typeof DiagnosticoCondominialRoute
   '/diferenciais': typeof DiferenciaisRoute
+  '/eleicao-de-sindico-profissional': typeof EleicaoDeSindicoProfissionalRoute
+  '/falta-de-transparencia-no-condominio': typeof FaltaDeTransparenciaNoCondominioRoute
+  '/gestao-administrativa-de-condominio': typeof GestaoAdministrativaDeCondominioRoute
   '/gestao-condominial': typeof GestaoCondominialRoute
+  '/gestao-de-contratos-do-condominio': typeof GestaoDeContratosDoCondominioRoute
+  '/gestao-de-inadimplencia-condominial': typeof GestaoDeInadimplenciaCondominialRoute
+  '/gestao-de-prestadores-e-equipes': typeof GestaoDePrestadoresEEquipesRoute
+  '/governanca-condominial': typeof GovernancaCondominialRoute
+  '/implantacao-de-condominio': typeof ImplantacaoDeCondominioRoute
+  '/legalizacao-de-condominio': typeof LegalizacaoDeCondominioRoute
+  '/manutencao-preventiva-condominial': typeof ManutencaoPreventivaCondominialRoute
+  '/mediacao-de-conflitos-condominiais': typeof MediacaoDeConflitosCondominiaisRoute
+  '/modernizacao-de-condominio': typeof ModernizacaoDeCondominioRoute
+  '/o-que-faz-um-sindico-profissional': typeof OQueFazUmSindicoProfissionalRoute
+  '/orientacao-para-sindico-morador': typeof OrientacaoParaSindicoMoradorRoute
+  '/planejamento-plurianual-condominio': typeof PlanejamentoPlurianualCondominioRoute
+  '/prestacao-de-contas-condominial': typeof PrestacaoDeContasCondominialRoute
+  '/quando-trocar-o-sindico': typeof QuandoTrocarOSindicoRoute
+  '/recuperacao-financeira-de-condominio': typeof RecuperacaoFinanceiraDeCondominioRoute
   '/regioes': typeof RegioesRoute
+  '/relacao-sindico-profissional-e-conselho': typeof RelacaoSindicoProfissionalEConselhoRoute
+  '/responsabilidades-do-sindico-profissional': typeof ResponsabilidadesDoSindicoProfissionalRoute
+  '/seguranca-patrimonial-condominio': typeof SegurancaPatrimonialCondominioRoute
   '/servicos': typeof ServicosRoute
+  '/sindicatura-profissional': typeof SindicaturaProfissionalRoute
+  '/sindico-para-condominio-alto-padrao': typeof SindicoParaCondominioAltoPadraoRoute
+  '/sindico-para-condominio-antigo': typeof SindicoParaCondominioAntigoRoute
+  '/sindico-para-condominio-clube': typeof SindicoParaCondominioClubeRoute
+  '/sindico-para-condominio-comercial': typeof SindicoParaCondominioComercialRoute
+  '/sindico-para-condominio-grande-porte': typeof SindicoParaCondominioGrandePorteRoute
+  '/sindico-para-condominio-horizontal': typeof SindicoParaCondominioHorizontalRoute
+  '/sindico-para-condominio-misto': typeof SindicoParaCondominioMistoRoute
+  '/sindico-para-condominio-multiplas-torres': typeof SindicoParaCondominioMultiplasTorresRoute
+  '/sindico-para-condominio-operacao-complexa': typeof SindicoParaCondominioOperacaoComplexaRoute
+  '/sindico-para-condominio-residencial': typeof SindicoParaCondominioResidencialRoute
+  '/sindico-profissional-aldeia-da-serra': typeof SindicoProfissionalAldeiaDaSerraRoute
   '/sindico-profissional-alphaville': typeof SindicoProfissionalAlphavilleRoute
+  '/sindico-profissional-alto-da-boa-vista': typeof SindicoProfissionalAltoDaBoaVistaRoute
+  '/sindico-profissional-alto-da-lapa': typeof SindicoProfissionalAltoDaLapaRoute
+  '/sindico-profissional-alto-de-pinheiros': typeof SindicoProfissionalAltoDePinheirosRoute
+  '/sindico-profissional-barra-funda': typeof SindicoProfissionalBarraFundaRoute
   '/sindico-profissional-barueri': typeof SindicoProfissionalBarueriRoute
+  '/sindico-profissional-bela-vista': typeof SindicoProfissionalBelaVistaRoute
+  '/sindico-profissional-bela-vista-osasco': typeof SindicoProfissionalBelaVistaOsascoRoute
+  '/sindico-profissional-brooklin': typeof SindicoProfissionalBrooklinRoute
+  '/sindico-profissional-bussocaba': typeof SindicoProfissionalBussocabaRoute
+  '/sindico-profissional-butanta': typeof SindicoProfissionalButantaRoute
+  '/sindico-profissional-campinas': typeof SindicoProfissionalCampinasRoute
+  '/sindico-profissional-campo-belo': typeof SindicoProfissionalCampoBeloRoute
+  '/sindico-profissional-carapicuiba': typeof SindicoProfissionalCarapicuibaRoute
+  '/sindico-profissional-centro-de-barueri': typeof SindicoProfissionalCentroDeBarueriRoute
+  '/sindico-profissional-centro-de-osasco': typeof SindicoProfissionalCentroDeOsascoRoute
+  '/sindico-profissional-centro-de-santana-de-parnaiba': typeof SindicoProfissionalCentroDeSantanaDeParnaibaRoute
+  '/sindico-profissional-fazendinha': typeof SindicoProfissionalFazendinhaRoute
+  '/sindico-profissional-granja-viana': typeof SindicoProfissionalGranjaVianaRoute
+  '/sindico-profissional-higienopolis': typeof SindicoProfissionalHigienopolisRoute
+  '/sindico-profissional-ibirapuera': typeof SindicoProfissionalIbirapueraRoute
+  '/sindico-profissional-indaiatuba': typeof SindicoProfissionalIndaiatubaRoute
+  '/sindico-profissional-itaim-bibi': typeof SindicoProfissionalItaimBibiRoute
+  '/sindico-profissional-jaguaribe': typeof SindicoProfissionalJaguaribeRoute
+  '/sindico-profissional-jardim-america': typeof SindicoProfissionalJardimAmericaRoute
+  '/sindico-profissional-jardim-europa': typeof SindicoProfissionalJardimEuropaRoute
+  '/sindico-profissional-jardim-paulista': typeof SindicoProfissionalJardimPaulistaRoute
+  '/sindico-profissional-jardins': typeof SindicoProfissionalJardinsRoute
+  '/sindico-profissional-km-18': typeof SindicoProfissionalKm18Route
+  '/sindico-profissional-lapa': typeof SindicoProfissionalLapaRoute
+  '/sindico-profissional-moema': typeof SindicoProfissionalMoemaRoute
   '/sindico-profissional-osasco': typeof SindicoProfissionalOsascoRoute
+  '/sindico-profissional-ou-sindico-morador': typeof SindicoProfissionalOuSindicoMoradorRoute
+  '/sindico-profissional-para-administradoras': typeof SindicoProfissionalParaAdministradorasRoute
+  '/sindico-profissional-para-conselho-fiscal': typeof SindicoProfissionalParaConselhoFiscalRoute
+  '/sindico-profissional-parque-dos-principes': typeof SindicoProfissionalParqueDosPrincipesRoute
+  '/sindico-profissional-parque-sao-domingos': typeof SindicoProfissionalParqueSaoDomingosRoute
+  '/sindico-profissional-paulista': typeof SindicoProfissionalPaulistaRoute
+  '/sindico-profissional-perdizes': typeof SindicoProfissionalPerdizesRoute
+  '/sindico-profissional-pinheiros': typeof SindicoProfissionalPinheirosRoute
+  '/sindico-profissional-pompeia': typeof SindicoProfissionalPompeiaRoute
+  '/sindico-profissional-presidente-altino': typeof SindicoProfissionalPresidenteAltinoRoute
+  '/sindico-profissional-quitauna': typeof SindicoProfissionalQuitaunaRoute
   '/sindico-profissional-santana-de-parnaiba': typeof SindicoProfissionalSantanaDeParnaibaRoute
   '/sindico-profissional-sao-paulo': typeof SindicoProfissionalSaoPauloRoute
+  '/sindico-profissional-sumare': typeof SindicoProfissionalSumareRoute
+  '/sindico-profissional-tambore': typeof SindicoProfissionalTamboreRoute
+  '/sindico-profissional-vila-andrade': typeof SindicoProfissionalVilaAndradeRoute
+  '/sindico-profissional-vila-campesina': typeof SindicoProfissionalVilaCampesinaRoute
+  '/sindico-profissional-vila-clementino': typeof SindicoProfissionalVilaClementinoRoute
+  '/sindico-profissional-vila-leopoldina': typeof SindicoProfissionalVilaLeopoldinaRoute
+  '/sindico-profissional-vila-madalena': typeof SindicoProfissionalVilaMadalenaRoute
+  '/sindico-profissional-vila-mariana': typeof SindicoProfissionalVilaMarianaRoute
+  '/sindico-profissional-vila-mascote': typeof SindicoProfissionalVilaMascoteRoute
+  '/sindico-profissional-vila-nova-conceicao': typeof SindicoProfissionalVilaNovaConceicaoRoute
+  '/sindico-profissional-vila-olimpia': typeof SindicoProfissionalVilaOlimpiaRoute
+  '/sindico-profissional-vila-romana': typeof SindicoProfissionalVilaRomanaRoute
+  '/sindico-profissional-vila-sao-francisco': typeof SindicoProfissionalVilaSaoFranciscoRoute
+  '/sindico-profissional-vila-yara': typeof SindicoProfissionalVilaYaraRoute
+  '/sindico-profissional-vinhedo': typeof SindicoProfissionalVinhedoRoute
   '/sobre': typeof SobreRoute
+  '/transicao-sindico-morador-para-profissional': typeof TransicaoSindicoMoradorParaProfissionalRoute
+  '/troca-de-sindico': typeof TrocaDeSindicoRoute
+  '/valorizacao-patrimonial-condominio': typeof ValorizacaoPatrimonialCondominioRoute
+  '/vantagens-do-sindico-profissional': typeof VantagensDoSindicoProfissionalRoute
+  '/visitas-do-sindico-profissional': typeof VisitasDoSindicoProfissionalRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/$slug': typeof SlugRoute
   '/cases': typeof CasesRoute
+  '/como-contratar-sindico-profissional': typeof ComoContratarSindicoProfissionalRoute
+  '/como-escolher-sindico-profissional': typeof ComoEscolherSindicoProfissionalRoute
+  '/como-o-conselho-pode-contratar-sindico-profissional': typeof ComoOConselhoPodeContratarSindicoProfissionalRoute
+  '/compliance-condominial': typeof ComplianceCondominialRoute
+  '/comunicacao-com-condominos': typeof ComunicacaoComCondominosRoute
+  '/condominio-em-crise': typeof CondominioEmCriseRoute
+  '/condominio-sem-candidato-a-sindico': typeof CondominioSemCandidatoASindicoRoute
+  '/conducao-de-assembleias': typeof ConducaoDeAssembleiasRoute
   '/contato': typeof ContatoRoute
+  '/contratacao-de-sindico-profissional-em-assembleia': typeof ContratacaoDeSindicoProfissionalEmAssembleiaRoute
+  '/diagnostico-condominial': typeof DiagnosticoCondominialRoute
   '/diferenciais': typeof DiferenciaisRoute
+  '/eleicao-de-sindico-profissional': typeof EleicaoDeSindicoProfissionalRoute
+  '/falta-de-transparencia-no-condominio': typeof FaltaDeTransparenciaNoCondominioRoute
+  '/gestao-administrativa-de-condominio': typeof GestaoAdministrativaDeCondominioRoute
   '/gestao-condominial': typeof GestaoCondominialRoute
+  '/gestao-de-contratos-do-condominio': typeof GestaoDeContratosDoCondominioRoute
+  '/gestao-de-inadimplencia-condominial': typeof GestaoDeInadimplenciaCondominialRoute
+  '/gestao-de-prestadores-e-equipes': typeof GestaoDePrestadoresEEquipesRoute
+  '/governanca-condominial': typeof GovernancaCondominialRoute
+  '/implantacao-de-condominio': typeof ImplantacaoDeCondominioRoute
+  '/legalizacao-de-condominio': typeof LegalizacaoDeCondominioRoute
+  '/manutencao-preventiva-condominial': typeof ManutencaoPreventivaCondominialRoute
+  '/mediacao-de-conflitos-condominiais': typeof MediacaoDeConflitosCondominiaisRoute
+  '/modernizacao-de-condominio': typeof ModernizacaoDeCondominioRoute
+  '/o-que-faz-um-sindico-profissional': typeof OQueFazUmSindicoProfissionalRoute
+  '/orientacao-para-sindico-morador': typeof OrientacaoParaSindicoMoradorRoute
+  '/planejamento-plurianual-condominio': typeof PlanejamentoPlurianualCondominioRoute
+  '/prestacao-de-contas-condominial': typeof PrestacaoDeContasCondominialRoute
+  '/quando-trocar-o-sindico': typeof QuandoTrocarOSindicoRoute
+  '/recuperacao-financeira-de-condominio': typeof RecuperacaoFinanceiraDeCondominioRoute
   '/regioes': typeof RegioesRoute
+  '/relacao-sindico-profissional-e-conselho': typeof RelacaoSindicoProfissionalEConselhoRoute
+  '/responsabilidades-do-sindico-profissional': typeof ResponsabilidadesDoSindicoProfissionalRoute
+  '/seguranca-patrimonial-condominio': typeof SegurancaPatrimonialCondominioRoute
   '/servicos': typeof ServicosRoute
+  '/sindicatura-profissional': typeof SindicaturaProfissionalRoute
+  '/sindico-para-condominio-alto-padrao': typeof SindicoParaCondominioAltoPadraoRoute
+  '/sindico-para-condominio-antigo': typeof SindicoParaCondominioAntigoRoute
+  '/sindico-para-condominio-clube': typeof SindicoParaCondominioClubeRoute
+  '/sindico-para-condominio-comercial': typeof SindicoParaCondominioComercialRoute
+  '/sindico-para-condominio-grande-porte': typeof SindicoParaCondominioGrandePorteRoute
+  '/sindico-para-condominio-horizontal': typeof SindicoParaCondominioHorizontalRoute
+  '/sindico-para-condominio-misto': typeof SindicoParaCondominioMistoRoute
+  '/sindico-para-condominio-multiplas-torres': typeof SindicoParaCondominioMultiplasTorresRoute
+  '/sindico-para-condominio-operacao-complexa': typeof SindicoParaCondominioOperacaoComplexaRoute
+  '/sindico-para-condominio-residencial': typeof SindicoParaCondominioResidencialRoute
+  '/sindico-profissional-aldeia-da-serra': typeof SindicoProfissionalAldeiaDaSerraRoute
   '/sindico-profissional-alphaville': typeof SindicoProfissionalAlphavilleRoute
+  '/sindico-profissional-alto-da-boa-vista': typeof SindicoProfissionalAltoDaBoaVistaRoute
+  '/sindico-profissional-alto-da-lapa': typeof SindicoProfissionalAltoDaLapaRoute
+  '/sindico-profissional-alto-de-pinheiros': typeof SindicoProfissionalAltoDePinheirosRoute
+  '/sindico-profissional-barra-funda': typeof SindicoProfissionalBarraFundaRoute
   '/sindico-profissional-barueri': typeof SindicoProfissionalBarueriRoute
+  '/sindico-profissional-bela-vista': typeof SindicoProfissionalBelaVistaRoute
+  '/sindico-profissional-bela-vista-osasco': typeof SindicoProfissionalBelaVistaOsascoRoute
+  '/sindico-profissional-brooklin': typeof SindicoProfissionalBrooklinRoute
+  '/sindico-profissional-bussocaba': typeof SindicoProfissionalBussocabaRoute
+  '/sindico-profissional-butanta': typeof SindicoProfissionalButantaRoute
+  '/sindico-profissional-campinas': typeof SindicoProfissionalCampinasRoute
+  '/sindico-profissional-campo-belo': typeof SindicoProfissionalCampoBeloRoute
+  '/sindico-profissional-carapicuiba': typeof SindicoProfissionalCarapicuibaRoute
+  '/sindico-profissional-centro-de-barueri': typeof SindicoProfissionalCentroDeBarueriRoute
+  '/sindico-profissional-centro-de-osasco': typeof SindicoProfissionalCentroDeOsascoRoute
+  '/sindico-profissional-centro-de-santana-de-parnaiba': typeof SindicoProfissionalCentroDeSantanaDeParnaibaRoute
+  '/sindico-profissional-fazendinha': typeof SindicoProfissionalFazendinhaRoute
+  '/sindico-profissional-granja-viana': typeof SindicoProfissionalGranjaVianaRoute
+  '/sindico-profissional-higienopolis': typeof SindicoProfissionalHigienopolisRoute
+  '/sindico-profissional-ibirapuera': typeof SindicoProfissionalIbirapueraRoute
+  '/sindico-profissional-indaiatuba': typeof SindicoProfissionalIndaiatubaRoute
+  '/sindico-profissional-itaim-bibi': typeof SindicoProfissionalItaimBibiRoute
+  '/sindico-profissional-jaguaribe': typeof SindicoProfissionalJaguaribeRoute
+  '/sindico-profissional-jardim-america': typeof SindicoProfissionalJardimAmericaRoute
+  '/sindico-profissional-jardim-europa': typeof SindicoProfissionalJardimEuropaRoute
+  '/sindico-profissional-jardim-paulista': typeof SindicoProfissionalJardimPaulistaRoute
+  '/sindico-profissional-jardins': typeof SindicoProfissionalJardinsRoute
+  '/sindico-profissional-km-18': typeof SindicoProfissionalKm18Route
+  '/sindico-profissional-lapa': typeof SindicoProfissionalLapaRoute
+  '/sindico-profissional-moema': typeof SindicoProfissionalMoemaRoute
   '/sindico-profissional-osasco': typeof SindicoProfissionalOsascoRoute
+  '/sindico-profissional-ou-sindico-morador': typeof SindicoProfissionalOuSindicoMoradorRoute
+  '/sindico-profissional-para-administradoras': typeof SindicoProfissionalParaAdministradorasRoute
+  '/sindico-profissional-para-conselho-fiscal': typeof SindicoProfissionalParaConselhoFiscalRoute
+  '/sindico-profissional-parque-dos-principes': typeof SindicoProfissionalParqueDosPrincipesRoute
+  '/sindico-profissional-parque-sao-domingos': typeof SindicoProfissionalParqueSaoDomingosRoute
+  '/sindico-profissional-paulista': typeof SindicoProfissionalPaulistaRoute
+  '/sindico-profissional-perdizes': typeof SindicoProfissionalPerdizesRoute
+  '/sindico-profissional-pinheiros': typeof SindicoProfissionalPinheirosRoute
+  '/sindico-profissional-pompeia': typeof SindicoProfissionalPompeiaRoute
+  '/sindico-profissional-presidente-altino': typeof SindicoProfissionalPresidenteAltinoRoute
+  '/sindico-profissional-quitauna': typeof SindicoProfissionalQuitaunaRoute
   '/sindico-profissional-santana-de-parnaiba': typeof SindicoProfissionalSantanaDeParnaibaRoute
   '/sindico-profissional-sao-paulo': typeof SindicoProfissionalSaoPauloRoute
+  '/sindico-profissional-sumare': typeof SindicoProfissionalSumareRoute
+  '/sindico-profissional-tambore': typeof SindicoProfissionalTamboreRoute
+  '/sindico-profissional-vila-andrade': typeof SindicoProfissionalVilaAndradeRoute
+  '/sindico-profissional-vila-campesina': typeof SindicoProfissionalVilaCampesinaRoute
+  '/sindico-profissional-vila-clementino': typeof SindicoProfissionalVilaClementinoRoute
+  '/sindico-profissional-vila-leopoldina': typeof SindicoProfissionalVilaLeopoldinaRoute
+  '/sindico-profissional-vila-madalena': typeof SindicoProfissionalVilaMadalenaRoute
+  '/sindico-profissional-vila-mariana': typeof SindicoProfissionalVilaMarianaRoute
+  '/sindico-profissional-vila-mascote': typeof SindicoProfissionalVilaMascoteRoute
+  '/sindico-profissional-vila-nova-conceicao': typeof SindicoProfissionalVilaNovaConceicaoRoute
+  '/sindico-profissional-vila-olimpia': typeof SindicoProfissionalVilaOlimpiaRoute
+  '/sindico-profissional-vila-romana': typeof SindicoProfissionalVilaRomanaRoute
+  '/sindico-profissional-vila-sao-francisco': typeof SindicoProfissionalVilaSaoFranciscoRoute
+  '/sindico-profissional-vila-yara': typeof SindicoProfissionalVilaYaraRoute
+  '/sindico-profissional-vinhedo': typeof SindicoProfissionalVinhedoRoute
   '/sobre': typeof SobreRoute
+  '/transicao-sindico-morador-para-profissional': typeof TransicaoSindicoMoradorParaProfissionalRoute
+  '/troca-de-sindico': typeof TrocaDeSindicoRoute
+  '/valorizacao-patrimonial-condominio': typeof ValorizacaoPatrimonialCondominioRoute
+  '/vantagens-do-sindico-profissional': typeof VantagensDoSindicoProfissionalRoute
+  '/visitas-do-sindico-profissional': typeof VisitasDoSindicoProfissionalRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/$slug': typeof SlugRoute
   '/cases': typeof CasesRoute
+  '/como-contratar-sindico-profissional': typeof ComoContratarSindicoProfissionalRoute
+  '/como-escolher-sindico-profissional': typeof ComoEscolherSindicoProfissionalRoute
+  '/como-o-conselho-pode-contratar-sindico-profissional': typeof ComoOConselhoPodeContratarSindicoProfissionalRoute
+  '/compliance-condominial': typeof ComplianceCondominialRoute
+  '/comunicacao-com-condominos': typeof ComunicacaoComCondominosRoute
+  '/condominio-em-crise': typeof CondominioEmCriseRoute
+  '/condominio-sem-candidato-a-sindico': typeof CondominioSemCandidatoASindicoRoute
+  '/conducao-de-assembleias': typeof ConducaoDeAssembleiasRoute
   '/contato': typeof ContatoRoute
+  '/contratacao-de-sindico-profissional-em-assembleia': typeof ContratacaoDeSindicoProfissionalEmAssembleiaRoute
+  '/diagnostico-condominial': typeof DiagnosticoCondominialRoute
   '/diferenciais': typeof DiferenciaisRoute
+  '/eleicao-de-sindico-profissional': typeof EleicaoDeSindicoProfissionalRoute
+  '/falta-de-transparencia-no-condominio': typeof FaltaDeTransparenciaNoCondominioRoute
+  '/gestao-administrativa-de-condominio': typeof GestaoAdministrativaDeCondominioRoute
   '/gestao-condominial': typeof GestaoCondominialRoute
+  '/gestao-de-contratos-do-condominio': typeof GestaoDeContratosDoCondominioRoute
+  '/gestao-de-inadimplencia-condominial': typeof GestaoDeInadimplenciaCondominialRoute
+  '/gestao-de-prestadores-e-equipes': typeof GestaoDePrestadoresEEquipesRoute
+  '/governanca-condominial': typeof GovernancaCondominialRoute
+  '/implantacao-de-condominio': typeof ImplantacaoDeCondominioRoute
+  '/legalizacao-de-condominio': typeof LegalizacaoDeCondominioRoute
+  '/manutencao-preventiva-condominial': typeof ManutencaoPreventivaCondominialRoute
+  '/mediacao-de-conflitos-condominiais': typeof MediacaoDeConflitosCondominiaisRoute
+  '/modernizacao-de-condominio': typeof ModernizacaoDeCondominioRoute
+  '/o-que-faz-um-sindico-profissional': typeof OQueFazUmSindicoProfissionalRoute
+  '/orientacao-para-sindico-morador': typeof OrientacaoParaSindicoMoradorRoute
+  '/planejamento-plurianual-condominio': typeof PlanejamentoPlurianualCondominioRoute
+  '/prestacao-de-contas-condominial': typeof PrestacaoDeContasCondominialRoute
+  '/quando-trocar-o-sindico': typeof QuandoTrocarOSindicoRoute
+  '/recuperacao-financeira-de-condominio': typeof RecuperacaoFinanceiraDeCondominioRoute
   '/regioes': typeof RegioesRoute
+  '/relacao-sindico-profissional-e-conselho': typeof RelacaoSindicoProfissionalEConselhoRoute
+  '/responsabilidades-do-sindico-profissional': typeof ResponsabilidadesDoSindicoProfissionalRoute
+  '/seguranca-patrimonial-condominio': typeof SegurancaPatrimonialCondominioRoute
   '/servicos': typeof ServicosRoute
+  '/sindicatura-profissional': typeof SindicaturaProfissionalRoute
+  '/sindico-para-condominio-alto-padrao': typeof SindicoParaCondominioAltoPadraoRoute
+  '/sindico-para-condominio-antigo': typeof SindicoParaCondominioAntigoRoute
+  '/sindico-para-condominio-clube': typeof SindicoParaCondominioClubeRoute
+  '/sindico-para-condominio-comercial': typeof SindicoParaCondominioComercialRoute
+  '/sindico-para-condominio-grande-porte': typeof SindicoParaCondominioGrandePorteRoute
+  '/sindico-para-condominio-horizontal': typeof SindicoParaCondominioHorizontalRoute
+  '/sindico-para-condominio-misto': typeof SindicoParaCondominioMistoRoute
+  '/sindico-para-condominio-multiplas-torres': typeof SindicoParaCondominioMultiplasTorresRoute
+  '/sindico-para-condominio-operacao-complexa': typeof SindicoParaCondominioOperacaoComplexaRoute
+  '/sindico-para-condominio-residencial': typeof SindicoParaCondominioResidencialRoute
+  '/sindico-profissional-aldeia-da-serra': typeof SindicoProfissionalAldeiaDaSerraRoute
   '/sindico-profissional-alphaville': typeof SindicoProfissionalAlphavilleRoute
+  '/sindico-profissional-alto-da-boa-vista': typeof SindicoProfissionalAltoDaBoaVistaRoute
+  '/sindico-profissional-alto-da-lapa': typeof SindicoProfissionalAltoDaLapaRoute
+  '/sindico-profissional-alto-de-pinheiros': typeof SindicoProfissionalAltoDePinheirosRoute
+  '/sindico-profissional-barra-funda': typeof SindicoProfissionalBarraFundaRoute
   '/sindico-profissional-barueri': typeof SindicoProfissionalBarueriRoute
+  '/sindico-profissional-bela-vista': typeof SindicoProfissionalBelaVistaRoute
+  '/sindico-profissional-bela-vista-osasco': typeof SindicoProfissionalBelaVistaOsascoRoute
+  '/sindico-profissional-brooklin': typeof SindicoProfissionalBrooklinRoute
+  '/sindico-profissional-bussocaba': typeof SindicoProfissionalBussocabaRoute
+  '/sindico-profissional-butanta': typeof SindicoProfissionalButantaRoute
+  '/sindico-profissional-campinas': typeof SindicoProfissionalCampinasRoute
+  '/sindico-profissional-campo-belo': typeof SindicoProfissionalCampoBeloRoute
+  '/sindico-profissional-carapicuiba': typeof SindicoProfissionalCarapicuibaRoute
+  '/sindico-profissional-centro-de-barueri': typeof SindicoProfissionalCentroDeBarueriRoute
+  '/sindico-profissional-centro-de-osasco': typeof SindicoProfissionalCentroDeOsascoRoute
+  '/sindico-profissional-centro-de-santana-de-parnaiba': typeof SindicoProfissionalCentroDeSantanaDeParnaibaRoute
+  '/sindico-profissional-fazendinha': typeof SindicoProfissionalFazendinhaRoute
+  '/sindico-profissional-granja-viana': typeof SindicoProfissionalGranjaVianaRoute
+  '/sindico-profissional-higienopolis': typeof SindicoProfissionalHigienopolisRoute
+  '/sindico-profissional-ibirapuera': typeof SindicoProfissionalIbirapueraRoute
+  '/sindico-profissional-indaiatuba': typeof SindicoProfissionalIndaiatubaRoute
+  '/sindico-profissional-itaim-bibi': typeof SindicoProfissionalItaimBibiRoute
+  '/sindico-profissional-jaguaribe': typeof SindicoProfissionalJaguaribeRoute
+  '/sindico-profissional-jardim-america': typeof SindicoProfissionalJardimAmericaRoute
+  '/sindico-profissional-jardim-europa': typeof SindicoProfissionalJardimEuropaRoute
+  '/sindico-profissional-jardim-paulista': typeof SindicoProfissionalJardimPaulistaRoute
+  '/sindico-profissional-jardins': typeof SindicoProfissionalJardinsRoute
+  '/sindico-profissional-km-18': typeof SindicoProfissionalKm18Route
+  '/sindico-profissional-lapa': typeof SindicoProfissionalLapaRoute
+  '/sindico-profissional-moema': typeof SindicoProfissionalMoemaRoute
   '/sindico-profissional-osasco': typeof SindicoProfissionalOsascoRoute
+  '/sindico-profissional-ou-sindico-morador': typeof SindicoProfissionalOuSindicoMoradorRoute
+  '/sindico-profissional-para-administradoras': typeof SindicoProfissionalParaAdministradorasRoute
+  '/sindico-profissional-para-conselho-fiscal': typeof SindicoProfissionalParaConselhoFiscalRoute
+  '/sindico-profissional-parque-dos-principes': typeof SindicoProfissionalParqueDosPrincipesRoute
+  '/sindico-profissional-parque-sao-domingos': typeof SindicoProfissionalParqueSaoDomingosRoute
+  '/sindico-profissional-paulista': typeof SindicoProfissionalPaulistaRoute
+  '/sindico-profissional-perdizes': typeof SindicoProfissionalPerdizesRoute
+  '/sindico-profissional-pinheiros': typeof SindicoProfissionalPinheirosRoute
+  '/sindico-profissional-pompeia': typeof SindicoProfissionalPompeiaRoute
+  '/sindico-profissional-presidente-altino': typeof SindicoProfissionalPresidenteAltinoRoute
+  '/sindico-profissional-quitauna': typeof SindicoProfissionalQuitaunaRoute
   '/sindico-profissional-santana-de-parnaiba': typeof SindicoProfissionalSantanaDeParnaibaRoute
   '/sindico-profissional-sao-paulo': typeof SindicoProfissionalSaoPauloRoute
+  '/sindico-profissional-sumare': typeof SindicoProfissionalSumareRoute
+  '/sindico-profissional-tambore': typeof SindicoProfissionalTamboreRoute
+  '/sindico-profissional-vila-andrade': typeof SindicoProfissionalVilaAndradeRoute
+  '/sindico-profissional-vila-campesina': typeof SindicoProfissionalVilaCampesinaRoute
+  '/sindico-profissional-vila-clementino': typeof SindicoProfissionalVilaClementinoRoute
+  '/sindico-profissional-vila-leopoldina': typeof SindicoProfissionalVilaLeopoldinaRoute
+  '/sindico-profissional-vila-madalena': typeof SindicoProfissionalVilaMadalenaRoute
+  '/sindico-profissional-vila-mariana': typeof SindicoProfissionalVilaMarianaRoute
+  '/sindico-profissional-vila-mascote': typeof SindicoProfissionalVilaMascoteRoute
+  '/sindico-profissional-vila-nova-conceicao': typeof SindicoProfissionalVilaNovaConceicaoRoute
+  '/sindico-profissional-vila-olimpia': typeof SindicoProfissionalVilaOlimpiaRoute
+  '/sindico-profissional-vila-romana': typeof SindicoProfissionalVilaRomanaRoute
+  '/sindico-profissional-vila-sao-francisco': typeof SindicoProfissionalVilaSaoFranciscoRoute
+  '/sindico-profissional-vila-yara': typeof SindicoProfissionalVilaYaraRoute
+  '/sindico-profissional-vinhedo': typeof SindicoProfissionalVinhedoRoute
   '/sobre': typeof SobreRoute
+  '/transicao-sindico-morador-para-profissional': typeof TransicaoSindicoMoradorParaProfissionalRoute
+  '/troca-de-sindico': typeof TrocaDeSindicoRoute
+  '/valorizacao-patrimonial-condominio': typeof ValorizacaoPatrimonialCondominioRoute
+  '/vantagens-do-sindico-profissional': typeof VantagensDoSindicoProfissionalRoute
+  '/visitas-do-sindico-profissional': typeof VisitasDoSindicoProfissionalRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -155,66 +1173,478 @@ export interface FileRouteTypes {
     | '/'
     | '/$slug'
     | '/cases'
+    | '/como-contratar-sindico-profissional'
+    | '/como-escolher-sindico-profissional'
+    | '/como-o-conselho-pode-contratar-sindico-profissional'
+    | '/compliance-condominial'
+    | '/comunicacao-com-condominos'
+    | '/condominio-em-crise'
+    | '/condominio-sem-candidato-a-sindico'
+    | '/conducao-de-assembleias'
     | '/contato'
+    | '/contratacao-de-sindico-profissional-em-assembleia'
+    | '/diagnostico-condominial'
     | '/diferenciais'
+    | '/eleicao-de-sindico-profissional'
+    | '/falta-de-transparencia-no-condominio'
+    | '/gestao-administrativa-de-condominio'
     | '/gestao-condominial'
+    | '/gestao-de-contratos-do-condominio'
+    | '/gestao-de-inadimplencia-condominial'
+    | '/gestao-de-prestadores-e-equipes'
+    | '/governanca-condominial'
+    | '/implantacao-de-condominio'
+    | '/legalizacao-de-condominio'
+    | '/manutencao-preventiva-condominial'
+    | '/mediacao-de-conflitos-condominiais'
+    | '/modernizacao-de-condominio'
+    | '/o-que-faz-um-sindico-profissional'
+    | '/orientacao-para-sindico-morador'
+    | '/planejamento-plurianual-condominio'
+    | '/prestacao-de-contas-condominial'
+    | '/quando-trocar-o-sindico'
+    | '/recuperacao-financeira-de-condominio'
     | '/regioes'
+    | '/relacao-sindico-profissional-e-conselho'
+    | '/responsabilidades-do-sindico-profissional'
+    | '/seguranca-patrimonial-condominio'
     | '/servicos'
+    | '/sindicatura-profissional'
+    | '/sindico-para-condominio-alto-padrao'
+    | '/sindico-para-condominio-antigo'
+    | '/sindico-para-condominio-clube'
+    | '/sindico-para-condominio-comercial'
+    | '/sindico-para-condominio-grande-porte'
+    | '/sindico-para-condominio-horizontal'
+    | '/sindico-para-condominio-misto'
+    | '/sindico-para-condominio-multiplas-torres'
+    | '/sindico-para-condominio-operacao-complexa'
+    | '/sindico-para-condominio-residencial'
+    | '/sindico-profissional-aldeia-da-serra'
     | '/sindico-profissional-alphaville'
+    | '/sindico-profissional-alto-da-boa-vista'
+    | '/sindico-profissional-alto-da-lapa'
+    | '/sindico-profissional-alto-de-pinheiros'
+    | '/sindico-profissional-barra-funda'
     | '/sindico-profissional-barueri'
+    | '/sindico-profissional-bela-vista'
+    | '/sindico-profissional-bela-vista-osasco'
+    | '/sindico-profissional-brooklin'
+    | '/sindico-profissional-bussocaba'
+    | '/sindico-profissional-butanta'
+    | '/sindico-profissional-campinas'
+    | '/sindico-profissional-campo-belo'
+    | '/sindico-profissional-carapicuiba'
+    | '/sindico-profissional-centro-de-barueri'
+    | '/sindico-profissional-centro-de-osasco'
+    | '/sindico-profissional-centro-de-santana-de-parnaiba'
+    | '/sindico-profissional-fazendinha'
+    | '/sindico-profissional-granja-viana'
+    | '/sindico-profissional-higienopolis'
+    | '/sindico-profissional-ibirapuera'
+    | '/sindico-profissional-indaiatuba'
+    | '/sindico-profissional-itaim-bibi'
+    | '/sindico-profissional-jaguaribe'
+    | '/sindico-profissional-jardim-america'
+    | '/sindico-profissional-jardim-europa'
+    | '/sindico-profissional-jardim-paulista'
+    | '/sindico-profissional-jardins'
+    | '/sindico-profissional-km-18'
+    | '/sindico-profissional-lapa'
+    | '/sindico-profissional-moema'
     | '/sindico-profissional-osasco'
+    | '/sindico-profissional-ou-sindico-morador'
+    | '/sindico-profissional-para-administradoras'
+    | '/sindico-profissional-para-conselho-fiscal'
+    | '/sindico-profissional-parque-dos-principes'
+    | '/sindico-profissional-parque-sao-domingos'
+    | '/sindico-profissional-paulista'
+    | '/sindico-profissional-perdizes'
+    | '/sindico-profissional-pinheiros'
+    | '/sindico-profissional-pompeia'
+    | '/sindico-profissional-presidente-altino'
+    | '/sindico-profissional-quitauna'
     | '/sindico-profissional-santana-de-parnaiba'
     | '/sindico-profissional-sao-paulo'
+    | '/sindico-profissional-sumare'
+    | '/sindico-profissional-tambore'
+    | '/sindico-profissional-vila-andrade'
+    | '/sindico-profissional-vila-campesina'
+    | '/sindico-profissional-vila-clementino'
+    | '/sindico-profissional-vila-leopoldina'
+    | '/sindico-profissional-vila-madalena'
+    | '/sindico-profissional-vila-mariana'
+    | '/sindico-profissional-vila-mascote'
+    | '/sindico-profissional-vila-nova-conceicao'
+    | '/sindico-profissional-vila-olimpia'
+    | '/sindico-profissional-vila-romana'
+    | '/sindico-profissional-vila-sao-francisco'
+    | '/sindico-profissional-vila-yara'
+    | '/sindico-profissional-vinhedo'
     | '/sobre'
+    | '/transicao-sindico-morador-para-profissional'
+    | '/troca-de-sindico'
+    | '/valorizacao-patrimonial-condominio'
+    | '/vantagens-do-sindico-profissional'
+    | '/visitas-do-sindico-profissional'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/$slug'
     | '/cases'
+    | '/como-contratar-sindico-profissional'
+    | '/como-escolher-sindico-profissional'
+    | '/como-o-conselho-pode-contratar-sindico-profissional'
+    | '/compliance-condominial'
+    | '/comunicacao-com-condominos'
+    | '/condominio-em-crise'
+    | '/condominio-sem-candidato-a-sindico'
+    | '/conducao-de-assembleias'
     | '/contato'
+    | '/contratacao-de-sindico-profissional-em-assembleia'
+    | '/diagnostico-condominial'
     | '/diferenciais'
+    | '/eleicao-de-sindico-profissional'
+    | '/falta-de-transparencia-no-condominio'
+    | '/gestao-administrativa-de-condominio'
     | '/gestao-condominial'
+    | '/gestao-de-contratos-do-condominio'
+    | '/gestao-de-inadimplencia-condominial'
+    | '/gestao-de-prestadores-e-equipes'
+    | '/governanca-condominial'
+    | '/implantacao-de-condominio'
+    | '/legalizacao-de-condominio'
+    | '/manutencao-preventiva-condominial'
+    | '/mediacao-de-conflitos-condominiais'
+    | '/modernizacao-de-condominio'
+    | '/o-que-faz-um-sindico-profissional'
+    | '/orientacao-para-sindico-morador'
+    | '/planejamento-plurianual-condominio'
+    | '/prestacao-de-contas-condominial'
+    | '/quando-trocar-o-sindico'
+    | '/recuperacao-financeira-de-condominio'
     | '/regioes'
+    | '/relacao-sindico-profissional-e-conselho'
+    | '/responsabilidades-do-sindico-profissional'
+    | '/seguranca-patrimonial-condominio'
     | '/servicos'
+    | '/sindicatura-profissional'
+    | '/sindico-para-condominio-alto-padrao'
+    | '/sindico-para-condominio-antigo'
+    | '/sindico-para-condominio-clube'
+    | '/sindico-para-condominio-comercial'
+    | '/sindico-para-condominio-grande-porte'
+    | '/sindico-para-condominio-horizontal'
+    | '/sindico-para-condominio-misto'
+    | '/sindico-para-condominio-multiplas-torres'
+    | '/sindico-para-condominio-operacao-complexa'
+    | '/sindico-para-condominio-residencial'
+    | '/sindico-profissional-aldeia-da-serra'
     | '/sindico-profissional-alphaville'
+    | '/sindico-profissional-alto-da-boa-vista'
+    | '/sindico-profissional-alto-da-lapa'
+    | '/sindico-profissional-alto-de-pinheiros'
+    | '/sindico-profissional-barra-funda'
     | '/sindico-profissional-barueri'
+    | '/sindico-profissional-bela-vista'
+    | '/sindico-profissional-bela-vista-osasco'
+    | '/sindico-profissional-brooklin'
+    | '/sindico-profissional-bussocaba'
+    | '/sindico-profissional-butanta'
+    | '/sindico-profissional-campinas'
+    | '/sindico-profissional-campo-belo'
+    | '/sindico-profissional-carapicuiba'
+    | '/sindico-profissional-centro-de-barueri'
+    | '/sindico-profissional-centro-de-osasco'
+    | '/sindico-profissional-centro-de-santana-de-parnaiba'
+    | '/sindico-profissional-fazendinha'
+    | '/sindico-profissional-granja-viana'
+    | '/sindico-profissional-higienopolis'
+    | '/sindico-profissional-ibirapuera'
+    | '/sindico-profissional-indaiatuba'
+    | '/sindico-profissional-itaim-bibi'
+    | '/sindico-profissional-jaguaribe'
+    | '/sindico-profissional-jardim-america'
+    | '/sindico-profissional-jardim-europa'
+    | '/sindico-profissional-jardim-paulista'
+    | '/sindico-profissional-jardins'
+    | '/sindico-profissional-km-18'
+    | '/sindico-profissional-lapa'
+    | '/sindico-profissional-moema'
     | '/sindico-profissional-osasco'
+    | '/sindico-profissional-ou-sindico-morador'
+    | '/sindico-profissional-para-administradoras'
+    | '/sindico-profissional-para-conselho-fiscal'
+    | '/sindico-profissional-parque-dos-principes'
+    | '/sindico-profissional-parque-sao-domingos'
+    | '/sindico-profissional-paulista'
+    | '/sindico-profissional-perdizes'
+    | '/sindico-profissional-pinheiros'
+    | '/sindico-profissional-pompeia'
+    | '/sindico-profissional-presidente-altino'
+    | '/sindico-profissional-quitauna'
     | '/sindico-profissional-santana-de-parnaiba'
     | '/sindico-profissional-sao-paulo'
+    | '/sindico-profissional-sumare'
+    | '/sindico-profissional-tambore'
+    | '/sindico-profissional-vila-andrade'
+    | '/sindico-profissional-vila-campesina'
+    | '/sindico-profissional-vila-clementino'
+    | '/sindico-profissional-vila-leopoldina'
+    | '/sindico-profissional-vila-madalena'
+    | '/sindico-profissional-vila-mariana'
+    | '/sindico-profissional-vila-mascote'
+    | '/sindico-profissional-vila-nova-conceicao'
+    | '/sindico-profissional-vila-olimpia'
+    | '/sindico-profissional-vila-romana'
+    | '/sindico-profissional-vila-sao-francisco'
+    | '/sindico-profissional-vila-yara'
+    | '/sindico-profissional-vinhedo'
     | '/sobre'
+    | '/transicao-sindico-morador-para-profissional'
+    | '/troca-de-sindico'
+    | '/valorizacao-patrimonial-condominio'
+    | '/vantagens-do-sindico-profissional'
+    | '/visitas-do-sindico-profissional'
   id:
     | '__root__'
     | '/'
     | '/$slug'
     | '/cases'
+    | '/como-contratar-sindico-profissional'
+    | '/como-escolher-sindico-profissional'
+    | '/como-o-conselho-pode-contratar-sindico-profissional'
+    | '/compliance-condominial'
+    | '/comunicacao-com-condominos'
+    | '/condominio-em-crise'
+    | '/condominio-sem-candidato-a-sindico'
+    | '/conducao-de-assembleias'
     | '/contato'
+    | '/contratacao-de-sindico-profissional-em-assembleia'
+    | '/diagnostico-condominial'
     | '/diferenciais'
+    | '/eleicao-de-sindico-profissional'
+    | '/falta-de-transparencia-no-condominio'
+    | '/gestao-administrativa-de-condominio'
     | '/gestao-condominial'
+    | '/gestao-de-contratos-do-condominio'
+    | '/gestao-de-inadimplencia-condominial'
+    | '/gestao-de-prestadores-e-equipes'
+    | '/governanca-condominial'
+    | '/implantacao-de-condominio'
+    | '/legalizacao-de-condominio'
+    | '/manutencao-preventiva-condominial'
+    | '/mediacao-de-conflitos-condominiais'
+    | '/modernizacao-de-condominio'
+    | '/o-que-faz-um-sindico-profissional'
+    | '/orientacao-para-sindico-morador'
+    | '/planejamento-plurianual-condominio'
+    | '/prestacao-de-contas-condominial'
+    | '/quando-trocar-o-sindico'
+    | '/recuperacao-financeira-de-condominio'
     | '/regioes'
+    | '/relacao-sindico-profissional-e-conselho'
+    | '/responsabilidades-do-sindico-profissional'
+    | '/seguranca-patrimonial-condominio'
     | '/servicos'
+    | '/sindicatura-profissional'
+    | '/sindico-para-condominio-alto-padrao'
+    | '/sindico-para-condominio-antigo'
+    | '/sindico-para-condominio-clube'
+    | '/sindico-para-condominio-comercial'
+    | '/sindico-para-condominio-grande-porte'
+    | '/sindico-para-condominio-horizontal'
+    | '/sindico-para-condominio-misto'
+    | '/sindico-para-condominio-multiplas-torres'
+    | '/sindico-para-condominio-operacao-complexa'
+    | '/sindico-para-condominio-residencial'
+    | '/sindico-profissional-aldeia-da-serra'
     | '/sindico-profissional-alphaville'
+    | '/sindico-profissional-alto-da-boa-vista'
+    | '/sindico-profissional-alto-da-lapa'
+    | '/sindico-profissional-alto-de-pinheiros'
+    | '/sindico-profissional-barra-funda'
     | '/sindico-profissional-barueri'
+    | '/sindico-profissional-bela-vista'
+    | '/sindico-profissional-bela-vista-osasco'
+    | '/sindico-profissional-brooklin'
+    | '/sindico-profissional-bussocaba'
+    | '/sindico-profissional-butanta'
+    | '/sindico-profissional-campinas'
+    | '/sindico-profissional-campo-belo'
+    | '/sindico-profissional-carapicuiba'
+    | '/sindico-profissional-centro-de-barueri'
+    | '/sindico-profissional-centro-de-osasco'
+    | '/sindico-profissional-centro-de-santana-de-parnaiba'
+    | '/sindico-profissional-fazendinha'
+    | '/sindico-profissional-granja-viana'
+    | '/sindico-profissional-higienopolis'
+    | '/sindico-profissional-ibirapuera'
+    | '/sindico-profissional-indaiatuba'
+    | '/sindico-profissional-itaim-bibi'
+    | '/sindico-profissional-jaguaribe'
+    | '/sindico-profissional-jardim-america'
+    | '/sindico-profissional-jardim-europa'
+    | '/sindico-profissional-jardim-paulista'
+    | '/sindico-profissional-jardins'
+    | '/sindico-profissional-km-18'
+    | '/sindico-profissional-lapa'
+    | '/sindico-profissional-moema'
     | '/sindico-profissional-osasco'
+    | '/sindico-profissional-ou-sindico-morador'
+    | '/sindico-profissional-para-administradoras'
+    | '/sindico-profissional-para-conselho-fiscal'
+    | '/sindico-profissional-parque-dos-principes'
+    | '/sindico-profissional-parque-sao-domingos'
+    | '/sindico-profissional-paulista'
+    | '/sindico-profissional-perdizes'
+    | '/sindico-profissional-pinheiros'
+    | '/sindico-profissional-pompeia'
+    | '/sindico-profissional-presidente-altino'
+    | '/sindico-profissional-quitauna'
     | '/sindico-profissional-santana-de-parnaiba'
     | '/sindico-profissional-sao-paulo'
+    | '/sindico-profissional-sumare'
+    | '/sindico-profissional-tambore'
+    | '/sindico-profissional-vila-andrade'
+    | '/sindico-profissional-vila-campesina'
+    | '/sindico-profissional-vila-clementino'
+    | '/sindico-profissional-vila-leopoldina'
+    | '/sindico-profissional-vila-madalena'
+    | '/sindico-profissional-vila-mariana'
+    | '/sindico-profissional-vila-mascote'
+    | '/sindico-profissional-vila-nova-conceicao'
+    | '/sindico-profissional-vila-olimpia'
+    | '/sindico-profissional-vila-romana'
+    | '/sindico-profissional-vila-sao-francisco'
+    | '/sindico-profissional-vila-yara'
+    | '/sindico-profissional-vinhedo'
     | '/sobre'
+    | '/transicao-sindico-morador-para-profissional'
+    | '/troca-de-sindico'
+    | '/valorizacao-patrimonial-condominio'
+    | '/vantagens-do-sindico-profissional'
+    | '/visitas-do-sindico-profissional'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   SlugRoute: typeof SlugRoute
   CasesRoute: typeof CasesRoute
+  ComoContratarSindicoProfissionalRoute: typeof ComoContratarSindicoProfissionalRoute
+  ComoEscolherSindicoProfissionalRoute: typeof ComoEscolherSindicoProfissionalRoute
+  ComoOConselhoPodeContratarSindicoProfissionalRoute: typeof ComoOConselhoPodeContratarSindicoProfissionalRoute
+  ComplianceCondominialRoute: typeof ComplianceCondominialRoute
+  ComunicacaoComCondominosRoute: typeof ComunicacaoComCondominosRoute
+  CondominioEmCriseRoute: typeof CondominioEmCriseRoute
+  CondominioSemCandidatoASindicoRoute: typeof CondominioSemCandidatoASindicoRoute
+  ConducaoDeAssembleiasRoute: typeof ConducaoDeAssembleiasRoute
   ContatoRoute: typeof ContatoRoute
+  ContratacaoDeSindicoProfissionalEmAssembleiaRoute: typeof ContratacaoDeSindicoProfissionalEmAssembleiaRoute
+  DiagnosticoCondominialRoute: typeof DiagnosticoCondominialRoute
   DiferenciaisRoute: typeof DiferenciaisRoute
+  EleicaoDeSindicoProfissionalRoute: typeof EleicaoDeSindicoProfissionalRoute
+  FaltaDeTransparenciaNoCondominioRoute: typeof FaltaDeTransparenciaNoCondominioRoute
+  GestaoAdministrativaDeCondominioRoute: typeof GestaoAdministrativaDeCondominioRoute
   GestaoCondominialRoute: typeof GestaoCondominialRoute
+  GestaoDeContratosDoCondominioRoute: typeof GestaoDeContratosDoCondominioRoute
+  GestaoDeInadimplenciaCondominialRoute: typeof GestaoDeInadimplenciaCondominialRoute
+  GestaoDePrestadoresEEquipesRoute: typeof GestaoDePrestadoresEEquipesRoute
+  GovernancaCondominialRoute: typeof GovernancaCondominialRoute
+  ImplantacaoDeCondominioRoute: typeof ImplantacaoDeCondominioRoute
+  LegalizacaoDeCondominioRoute: typeof LegalizacaoDeCondominioRoute
+  ManutencaoPreventivaCondominialRoute: typeof ManutencaoPreventivaCondominialRoute
+  MediacaoDeConflitosCondominiaisRoute: typeof MediacaoDeConflitosCondominiaisRoute
+  ModernizacaoDeCondominioRoute: typeof ModernizacaoDeCondominioRoute
+  OQueFazUmSindicoProfissionalRoute: typeof OQueFazUmSindicoProfissionalRoute
+  OrientacaoParaSindicoMoradorRoute: typeof OrientacaoParaSindicoMoradorRoute
+  PlanejamentoPlurianualCondominioRoute: typeof PlanejamentoPlurianualCondominioRoute
+  PrestacaoDeContasCondominialRoute: typeof PrestacaoDeContasCondominialRoute
+  QuandoTrocarOSindicoRoute: typeof QuandoTrocarOSindicoRoute
+  RecuperacaoFinanceiraDeCondominioRoute: typeof RecuperacaoFinanceiraDeCondominioRoute
   RegioesRoute: typeof RegioesRoute
+  RelacaoSindicoProfissionalEConselhoRoute: typeof RelacaoSindicoProfissionalEConselhoRoute
+  ResponsabilidadesDoSindicoProfissionalRoute: typeof ResponsabilidadesDoSindicoProfissionalRoute
+  SegurancaPatrimonialCondominioRoute: typeof SegurancaPatrimonialCondominioRoute
   ServicosRoute: typeof ServicosRoute
+  SindicaturaProfissionalRoute: typeof SindicaturaProfissionalRoute
+  SindicoParaCondominioAltoPadraoRoute: typeof SindicoParaCondominioAltoPadraoRoute
+  SindicoParaCondominioAntigoRoute: typeof SindicoParaCondominioAntigoRoute
+  SindicoParaCondominioClubeRoute: typeof SindicoParaCondominioClubeRoute
+  SindicoParaCondominioComercialRoute: typeof SindicoParaCondominioComercialRoute
+  SindicoParaCondominioGrandePorteRoute: typeof SindicoParaCondominioGrandePorteRoute
+  SindicoParaCondominioHorizontalRoute: typeof SindicoParaCondominioHorizontalRoute
+  SindicoParaCondominioMistoRoute: typeof SindicoParaCondominioMistoRoute
+  SindicoParaCondominioMultiplasTorresRoute: typeof SindicoParaCondominioMultiplasTorresRoute
+  SindicoParaCondominioOperacaoComplexaRoute: typeof SindicoParaCondominioOperacaoComplexaRoute
+  SindicoParaCondominioResidencialRoute: typeof SindicoParaCondominioResidencialRoute
+  SindicoProfissionalAldeiaDaSerraRoute: typeof SindicoProfissionalAldeiaDaSerraRoute
   SindicoProfissionalAlphavilleRoute: typeof SindicoProfissionalAlphavilleRoute
+  SindicoProfissionalAltoDaBoaVistaRoute: typeof SindicoProfissionalAltoDaBoaVistaRoute
+  SindicoProfissionalAltoDaLapaRoute: typeof SindicoProfissionalAltoDaLapaRoute
+  SindicoProfissionalAltoDePinheirosRoute: typeof SindicoProfissionalAltoDePinheirosRoute
+  SindicoProfissionalBarraFundaRoute: typeof SindicoProfissionalBarraFundaRoute
   SindicoProfissionalBarueriRoute: typeof SindicoProfissionalBarueriRoute
+  SindicoProfissionalBelaVistaRoute: typeof SindicoProfissionalBelaVistaRoute
+  SindicoProfissionalBelaVistaOsascoRoute: typeof SindicoProfissionalBelaVistaOsascoRoute
+  SindicoProfissionalBrooklinRoute: typeof SindicoProfissionalBrooklinRoute
+  SindicoProfissionalBussocabaRoute: typeof SindicoProfissionalBussocabaRoute
+  SindicoProfissionalButantaRoute: typeof SindicoProfissionalButantaRoute
+  SindicoProfissionalCampinasRoute: typeof SindicoProfissionalCampinasRoute
+  SindicoProfissionalCampoBeloRoute: typeof SindicoProfissionalCampoBeloRoute
+  SindicoProfissionalCarapicuibaRoute: typeof SindicoProfissionalCarapicuibaRoute
+  SindicoProfissionalCentroDeBarueriRoute: typeof SindicoProfissionalCentroDeBarueriRoute
+  SindicoProfissionalCentroDeOsascoRoute: typeof SindicoProfissionalCentroDeOsascoRoute
+  SindicoProfissionalCentroDeSantanaDeParnaibaRoute: typeof SindicoProfissionalCentroDeSantanaDeParnaibaRoute
+  SindicoProfissionalFazendinhaRoute: typeof SindicoProfissionalFazendinhaRoute
+  SindicoProfissionalGranjaVianaRoute: typeof SindicoProfissionalGranjaVianaRoute
+  SindicoProfissionalHigienopolisRoute: typeof SindicoProfissionalHigienopolisRoute
+  SindicoProfissionalIbirapueraRoute: typeof SindicoProfissionalIbirapueraRoute
+  SindicoProfissionalIndaiatubaRoute: typeof SindicoProfissionalIndaiatubaRoute
+  SindicoProfissionalItaimBibiRoute: typeof SindicoProfissionalItaimBibiRoute
+  SindicoProfissionalJaguaribeRoute: typeof SindicoProfissionalJaguaribeRoute
+  SindicoProfissionalJardimAmericaRoute: typeof SindicoProfissionalJardimAmericaRoute
+  SindicoProfissionalJardimEuropaRoute: typeof SindicoProfissionalJardimEuropaRoute
+  SindicoProfissionalJardimPaulistaRoute: typeof SindicoProfissionalJardimPaulistaRoute
+  SindicoProfissionalJardinsRoute: typeof SindicoProfissionalJardinsRoute
+  SindicoProfissionalKm18Route: typeof SindicoProfissionalKm18Route
+  SindicoProfissionalLapaRoute: typeof SindicoProfissionalLapaRoute
+  SindicoProfissionalMoemaRoute: typeof SindicoProfissionalMoemaRoute
   SindicoProfissionalOsascoRoute: typeof SindicoProfissionalOsascoRoute
+  SindicoProfissionalOuSindicoMoradorRoute: typeof SindicoProfissionalOuSindicoMoradorRoute
+  SindicoProfissionalParaAdministradorasRoute: typeof SindicoProfissionalParaAdministradorasRoute
+  SindicoProfissionalParaConselhoFiscalRoute: typeof SindicoProfissionalParaConselhoFiscalRoute
+  SindicoProfissionalParqueDosPrincipesRoute: typeof SindicoProfissionalParqueDosPrincipesRoute
+  SindicoProfissionalParqueSaoDomingosRoute: typeof SindicoProfissionalParqueSaoDomingosRoute
+  SindicoProfissionalPaulistaRoute: typeof SindicoProfissionalPaulistaRoute
+  SindicoProfissionalPerdizesRoute: typeof SindicoProfissionalPerdizesRoute
+  SindicoProfissionalPinheirosRoute: typeof SindicoProfissionalPinheirosRoute
+  SindicoProfissionalPompeiaRoute: typeof SindicoProfissionalPompeiaRoute
+  SindicoProfissionalPresidenteAltinoRoute: typeof SindicoProfissionalPresidenteAltinoRoute
+  SindicoProfissionalQuitaunaRoute: typeof SindicoProfissionalQuitaunaRoute
   SindicoProfissionalSantanaDeParnaibaRoute: typeof SindicoProfissionalSantanaDeParnaibaRoute
   SindicoProfissionalSaoPauloRoute: typeof SindicoProfissionalSaoPauloRoute
+  SindicoProfissionalSumareRoute: typeof SindicoProfissionalSumareRoute
+  SindicoProfissionalTamboreRoute: typeof SindicoProfissionalTamboreRoute
+  SindicoProfissionalVilaAndradeRoute: typeof SindicoProfissionalVilaAndradeRoute
+  SindicoProfissionalVilaCampesinaRoute: typeof SindicoProfissionalVilaCampesinaRoute
+  SindicoProfissionalVilaClementinoRoute: typeof SindicoProfissionalVilaClementinoRoute
+  SindicoProfissionalVilaLeopoldinaRoute: typeof SindicoProfissionalVilaLeopoldinaRoute
+  SindicoProfissionalVilaMadalenaRoute: typeof SindicoProfissionalVilaMadalenaRoute
+  SindicoProfissionalVilaMarianaRoute: typeof SindicoProfissionalVilaMarianaRoute
+  SindicoProfissionalVilaMascoteRoute: typeof SindicoProfissionalVilaMascoteRoute
+  SindicoProfissionalVilaNovaConceicaoRoute: typeof SindicoProfissionalVilaNovaConceicaoRoute
+  SindicoProfissionalVilaOlimpiaRoute: typeof SindicoProfissionalVilaOlimpiaRoute
+  SindicoProfissionalVilaRomanaRoute: typeof SindicoProfissionalVilaRomanaRoute
+  SindicoProfissionalVilaSaoFranciscoRoute: typeof SindicoProfissionalVilaSaoFranciscoRoute
+  SindicoProfissionalVilaYaraRoute: typeof SindicoProfissionalVilaYaraRoute
+  SindicoProfissionalVinhedoRoute: typeof SindicoProfissionalVinhedoRoute
   SobreRoute: typeof SobreRoute
+  TransicaoSindicoMoradorParaProfissionalRoute: typeof TransicaoSindicoMoradorParaProfissionalRoute
+  TrocaDeSindicoRoute: typeof TrocaDeSindicoRoute
+  ValorizacaoPatrimonialCondominioRoute: typeof ValorizacaoPatrimonialCondominioRoute
+  VantagensDoSindicoProfissionalRoute: typeof VantagensDoSindicoProfissionalRoute
+  VisitasDoSindicoProfissionalRoute: typeof VisitasDoSindicoProfissionalRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -240,11 +1670,81 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CasesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/como-contratar-sindico-profissional': {
+      id: '/como-contratar-sindico-profissional'
+      path: '/como-contratar-sindico-profissional'
+      fullPath: '/como-contratar-sindico-profissional'
+      preLoaderRoute: typeof ComoContratarSindicoProfissionalRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/como-escolher-sindico-profissional': {
+      id: '/como-escolher-sindico-profissional'
+      path: '/como-escolher-sindico-profissional'
+      fullPath: '/como-escolher-sindico-profissional'
+      preLoaderRoute: typeof ComoEscolherSindicoProfissionalRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/como-o-conselho-pode-contratar-sindico-profissional': {
+      id: '/como-o-conselho-pode-contratar-sindico-profissional'
+      path: '/como-o-conselho-pode-contratar-sindico-profissional'
+      fullPath: '/como-o-conselho-pode-contratar-sindico-profissional'
+      preLoaderRoute: typeof ComoOConselhoPodeContratarSindicoProfissionalRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/compliance-condominial': {
+      id: '/compliance-condominial'
+      path: '/compliance-condominial'
+      fullPath: '/compliance-condominial'
+      preLoaderRoute: typeof ComplianceCondominialRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/comunicacao-com-condominos': {
+      id: '/comunicacao-com-condominos'
+      path: '/comunicacao-com-condominos'
+      fullPath: '/comunicacao-com-condominos'
+      preLoaderRoute: typeof ComunicacaoComCondominosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/condominio-em-crise': {
+      id: '/condominio-em-crise'
+      path: '/condominio-em-crise'
+      fullPath: '/condominio-em-crise'
+      preLoaderRoute: typeof CondominioEmCriseRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/condominio-sem-candidato-a-sindico': {
+      id: '/condominio-sem-candidato-a-sindico'
+      path: '/condominio-sem-candidato-a-sindico'
+      fullPath: '/condominio-sem-candidato-a-sindico'
+      preLoaderRoute: typeof CondominioSemCandidatoASindicoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/conducao-de-assembleias': {
+      id: '/conducao-de-assembleias'
+      path: '/conducao-de-assembleias'
+      fullPath: '/conducao-de-assembleias'
+      preLoaderRoute: typeof ConducaoDeAssembleiasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/contato': {
       id: '/contato'
       path: '/contato'
       fullPath: '/contato'
       preLoaderRoute: typeof ContatoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contratacao-de-sindico-profissional-em-assembleia': {
+      id: '/contratacao-de-sindico-profissional-em-assembleia'
+      path: '/contratacao-de-sindico-profissional-em-assembleia'
+      fullPath: '/contratacao-de-sindico-profissional-em-assembleia'
+      preLoaderRoute: typeof ContratacaoDeSindicoProfissionalEmAssembleiaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/diagnostico-condominial': {
+      id: '/diagnostico-condominial'
+      path: '/diagnostico-condominial'
+      fullPath: '/diagnostico-condominial'
+      preLoaderRoute: typeof DiagnosticoCondominialRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/diferenciais': {
@@ -254,11 +1754,137 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DiferenciaisRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/eleicao-de-sindico-profissional': {
+      id: '/eleicao-de-sindico-profissional'
+      path: '/eleicao-de-sindico-profissional'
+      fullPath: '/eleicao-de-sindico-profissional'
+      preLoaderRoute: typeof EleicaoDeSindicoProfissionalRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/falta-de-transparencia-no-condominio': {
+      id: '/falta-de-transparencia-no-condominio'
+      path: '/falta-de-transparencia-no-condominio'
+      fullPath: '/falta-de-transparencia-no-condominio'
+      preLoaderRoute: typeof FaltaDeTransparenciaNoCondominioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gestao-administrativa-de-condominio': {
+      id: '/gestao-administrativa-de-condominio'
+      path: '/gestao-administrativa-de-condominio'
+      fullPath: '/gestao-administrativa-de-condominio'
+      preLoaderRoute: typeof GestaoAdministrativaDeCondominioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/gestao-condominial': {
       id: '/gestao-condominial'
       path: '/gestao-condominial'
       fullPath: '/gestao-condominial'
       preLoaderRoute: typeof GestaoCondominialRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gestao-de-contratos-do-condominio': {
+      id: '/gestao-de-contratos-do-condominio'
+      path: '/gestao-de-contratos-do-condominio'
+      fullPath: '/gestao-de-contratos-do-condominio'
+      preLoaderRoute: typeof GestaoDeContratosDoCondominioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gestao-de-inadimplencia-condominial': {
+      id: '/gestao-de-inadimplencia-condominial'
+      path: '/gestao-de-inadimplencia-condominial'
+      fullPath: '/gestao-de-inadimplencia-condominial'
+      preLoaderRoute: typeof GestaoDeInadimplenciaCondominialRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gestao-de-prestadores-e-equipes': {
+      id: '/gestao-de-prestadores-e-equipes'
+      path: '/gestao-de-prestadores-e-equipes'
+      fullPath: '/gestao-de-prestadores-e-equipes'
+      preLoaderRoute: typeof GestaoDePrestadoresEEquipesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/governanca-condominial': {
+      id: '/governanca-condominial'
+      path: '/governanca-condominial'
+      fullPath: '/governanca-condominial'
+      preLoaderRoute: typeof GovernancaCondominialRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/implantacao-de-condominio': {
+      id: '/implantacao-de-condominio'
+      path: '/implantacao-de-condominio'
+      fullPath: '/implantacao-de-condominio'
+      preLoaderRoute: typeof ImplantacaoDeCondominioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/legalizacao-de-condominio': {
+      id: '/legalizacao-de-condominio'
+      path: '/legalizacao-de-condominio'
+      fullPath: '/legalizacao-de-condominio'
+      preLoaderRoute: typeof LegalizacaoDeCondominioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/manutencao-preventiva-condominial': {
+      id: '/manutencao-preventiva-condominial'
+      path: '/manutencao-preventiva-condominial'
+      fullPath: '/manutencao-preventiva-condominial'
+      preLoaderRoute: typeof ManutencaoPreventivaCondominialRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mediacao-de-conflitos-condominiais': {
+      id: '/mediacao-de-conflitos-condominiais'
+      path: '/mediacao-de-conflitos-condominiais'
+      fullPath: '/mediacao-de-conflitos-condominiais'
+      preLoaderRoute: typeof MediacaoDeConflitosCondominiaisRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/modernizacao-de-condominio': {
+      id: '/modernizacao-de-condominio'
+      path: '/modernizacao-de-condominio'
+      fullPath: '/modernizacao-de-condominio'
+      preLoaderRoute: typeof ModernizacaoDeCondominioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/o-que-faz-um-sindico-profissional': {
+      id: '/o-que-faz-um-sindico-profissional'
+      path: '/o-que-faz-um-sindico-profissional'
+      fullPath: '/o-que-faz-um-sindico-profissional'
+      preLoaderRoute: typeof OQueFazUmSindicoProfissionalRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/orientacao-para-sindico-morador': {
+      id: '/orientacao-para-sindico-morador'
+      path: '/orientacao-para-sindico-morador'
+      fullPath: '/orientacao-para-sindico-morador'
+      preLoaderRoute: typeof OrientacaoParaSindicoMoradorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/planejamento-plurianual-condominio': {
+      id: '/planejamento-plurianual-condominio'
+      path: '/planejamento-plurianual-condominio'
+      fullPath: '/planejamento-plurianual-condominio'
+      preLoaderRoute: typeof PlanejamentoPlurianualCondominioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/prestacao-de-contas-condominial': {
+      id: '/prestacao-de-contas-condominial'
+      path: '/prestacao-de-contas-condominial'
+      fullPath: '/prestacao-de-contas-condominial'
+      preLoaderRoute: typeof PrestacaoDeContasCondominialRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/quando-trocar-o-sindico': {
+      id: '/quando-trocar-o-sindico'
+      path: '/quando-trocar-o-sindico'
+      fullPath: '/quando-trocar-o-sindico'
+      preLoaderRoute: typeof QuandoTrocarOSindicoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/recuperacao-financeira-de-condominio': {
+      id: '/recuperacao-financeira-de-condominio'
+      path: '/recuperacao-financeira-de-condominio'
+      fullPath: '/recuperacao-financeira-de-condominio'
+      preLoaderRoute: typeof RecuperacaoFinanceiraDeCondominioRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/regioes': {
@@ -268,11 +1894,116 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof RegioesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/relacao-sindico-profissional-e-conselho': {
+      id: '/relacao-sindico-profissional-e-conselho'
+      path: '/relacao-sindico-profissional-e-conselho'
+      fullPath: '/relacao-sindico-profissional-e-conselho'
+      preLoaderRoute: typeof RelacaoSindicoProfissionalEConselhoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/responsabilidades-do-sindico-profissional': {
+      id: '/responsabilidades-do-sindico-profissional'
+      path: '/responsabilidades-do-sindico-profissional'
+      fullPath: '/responsabilidades-do-sindico-profissional'
+      preLoaderRoute: typeof ResponsabilidadesDoSindicoProfissionalRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/seguranca-patrimonial-condominio': {
+      id: '/seguranca-patrimonial-condominio'
+      path: '/seguranca-patrimonial-condominio'
+      fullPath: '/seguranca-patrimonial-condominio'
+      preLoaderRoute: typeof SegurancaPatrimonialCondominioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/servicos': {
       id: '/servicos'
       path: '/servicos'
       fullPath: '/servicos'
       preLoaderRoute: typeof ServicosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindicatura-profissional': {
+      id: '/sindicatura-profissional'
+      path: '/sindicatura-profissional'
+      fullPath: '/sindicatura-profissional'
+      preLoaderRoute: typeof SindicaturaProfissionalRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-para-condominio-alto-padrao': {
+      id: '/sindico-para-condominio-alto-padrao'
+      path: '/sindico-para-condominio-alto-padrao'
+      fullPath: '/sindico-para-condominio-alto-padrao'
+      preLoaderRoute: typeof SindicoParaCondominioAltoPadraoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-para-condominio-antigo': {
+      id: '/sindico-para-condominio-antigo'
+      path: '/sindico-para-condominio-antigo'
+      fullPath: '/sindico-para-condominio-antigo'
+      preLoaderRoute: typeof SindicoParaCondominioAntigoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-para-condominio-clube': {
+      id: '/sindico-para-condominio-clube'
+      path: '/sindico-para-condominio-clube'
+      fullPath: '/sindico-para-condominio-clube'
+      preLoaderRoute: typeof SindicoParaCondominioClubeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-para-condominio-comercial': {
+      id: '/sindico-para-condominio-comercial'
+      path: '/sindico-para-condominio-comercial'
+      fullPath: '/sindico-para-condominio-comercial'
+      preLoaderRoute: typeof SindicoParaCondominioComercialRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-para-condominio-grande-porte': {
+      id: '/sindico-para-condominio-grande-porte'
+      path: '/sindico-para-condominio-grande-porte'
+      fullPath: '/sindico-para-condominio-grande-porte'
+      preLoaderRoute: typeof SindicoParaCondominioGrandePorteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-para-condominio-horizontal': {
+      id: '/sindico-para-condominio-horizontal'
+      path: '/sindico-para-condominio-horizontal'
+      fullPath: '/sindico-para-condominio-horizontal'
+      preLoaderRoute: typeof SindicoParaCondominioHorizontalRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-para-condominio-misto': {
+      id: '/sindico-para-condominio-misto'
+      path: '/sindico-para-condominio-misto'
+      fullPath: '/sindico-para-condominio-misto'
+      preLoaderRoute: typeof SindicoParaCondominioMistoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-para-condominio-multiplas-torres': {
+      id: '/sindico-para-condominio-multiplas-torres'
+      path: '/sindico-para-condominio-multiplas-torres'
+      fullPath: '/sindico-para-condominio-multiplas-torres'
+      preLoaderRoute: typeof SindicoParaCondominioMultiplasTorresRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-para-condominio-operacao-complexa': {
+      id: '/sindico-para-condominio-operacao-complexa'
+      path: '/sindico-para-condominio-operacao-complexa'
+      fullPath: '/sindico-para-condominio-operacao-complexa'
+      preLoaderRoute: typeof SindicoParaCondominioOperacaoComplexaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-para-condominio-residencial': {
+      id: '/sindico-para-condominio-residencial'
+      path: '/sindico-para-condominio-residencial'
+      fullPath: '/sindico-para-condominio-residencial'
+      preLoaderRoute: typeof SindicoParaCondominioResidencialRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-aldeia-da-serra': {
+      id: '/sindico-profissional-aldeia-da-serra'
+      path: '/sindico-profissional-aldeia-da-serra'
+      fullPath: '/sindico-profissional-aldeia-da-serra'
+      preLoaderRoute: typeof SindicoProfissionalAldeiaDaSerraRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/sindico-profissional-alphaville': {
@@ -282,6 +2013,34 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SindicoProfissionalAlphavilleRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/sindico-profissional-alto-da-boa-vista': {
+      id: '/sindico-profissional-alto-da-boa-vista'
+      path: '/sindico-profissional-alto-da-boa-vista'
+      fullPath: '/sindico-profissional-alto-da-boa-vista'
+      preLoaderRoute: typeof SindicoProfissionalAltoDaBoaVistaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-alto-da-lapa': {
+      id: '/sindico-profissional-alto-da-lapa'
+      path: '/sindico-profissional-alto-da-lapa'
+      fullPath: '/sindico-profissional-alto-da-lapa'
+      preLoaderRoute: typeof SindicoProfissionalAltoDaLapaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-alto-de-pinheiros': {
+      id: '/sindico-profissional-alto-de-pinheiros'
+      path: '/sindico-profissional-alto-de-pinheiros'
+      fullPath: '/sindico-profissional-alto-de-pinheiros'
+      preLoaderRoute: typeof SindicoProfissionalAltoDePinheirosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-barra-funda': {
+      id: '/sindico-profissional-barra-funda'
+      path: '/sindico-profissional-barra-funda'
+      fullPath: '/sindico-profissional-barra-funda'
+      preLoaderRoute: typeof SindicoProfissionalBarraFundaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/sindico-profissional-barueri': {
       id: '/sindico-profissional-barueri'
       path: '/sindico-profissional-barueri'
@@ -289,11 +2048,263 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SindicoProfissionalBarueriRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/sindico-profissional-bela-vista': {
+      id: '/sindico-profissional-bela-vista'
+      path: '/sindico-profissional-bela-vista'
+      fullPath: '/sindico-profissional-bela-vista'
+      preLoaderRoute: typeof SindicoProfissionalBelaVistaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-bela-vista-osasco': {
+      id: '/sindico-profissional-bela-vista-osasco'
+      path: '/sindico-profissional-bela-vista-osasco'
+      fullPath: '/sindico-profissional-bela-vista-osasco'
+      preLoaderRoute: typeof SindicoProfissionalBelaVistaOsascoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-brooklin': {
+      id: '/sindico-profissional-brooklin'
+      path: '/sindico-profissional-brooklin'
+      fullPath: '/sindico-profissional-brooklin'
+      preLoaderRoute: typeof SindicoProfissionalBrooklinRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-bussocaba': {
+      id: '/sindico-profissional-bussocaba'
+      path: '/sindico-profissional-bussocaba'
+      fullPath: '/sindico-profissional-bussocaba'
+      preLoaderRoute: typeof SindicoProfissionalBussocabaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-butanta': {
+      id: '/sindico-profissional-butanta'
+      path: '/sindico-profissional-butanta'
+      fullPath: '/sindico-profissional-butanta'
+      preLoaderRoute: typeof SindicoProfissionalButantaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-campinas': {
+      id: '/sindico-profissional-campinas'
+      path: '/sindico-profissional-campinas'
+      fullPath: '/sindico-profissional-campinas'
+      preLoaderRoute: typeof SindicoProfissionalCampinasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-campo-belo': {
+      id: '/sindico-profissional-campo-belo'
+      path: '/sindico-profissional-campo-belo'
+      fullPath: '/sindico-profissional-campo-belo'
+      preLoaderRoute: typeof SindicoProfissionalCampoBeloRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-carapicuiba': {
+      id: '/sindico-profissional-carapicuiba'
+      path: '/sindico-profissional-carapicuiba'
+      fullPath: '/sindico-profissional-carapicuiba'
+      preLoaderRoute: typeof SindicoProfissionalCarapicuibaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-centro-de-barueri': {
+      id: '/sindico-profissional-centro-de-barueri'
+      path: '/sindico-profissional-centro-de-barueri'
+      fullPath: '/sindico-profissional-centro-de-barueri'
+      preLoaderRoute: typeof SindicoProfissionalCentroDeBarueriRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-centro-de-osasco': {
+      id: '/sindico-profissional-centro-de-osasco'
+      path: '/sindico-profissional-centro-de-osasco'
+      fullPath: '/sindico-profissional-centro-de-osasco'
+      preLoaderRoute: typeof SindicoProfissionalCentroDeOsascoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-centro-de-santana-de-parnaiba': {
+      id: '/sindico-profissional-centro-de-santana-de-parnaiba'
+      path: '/sindico-profissional-centro-de-santana-de-parnaiba'
+      fullPath: '/sindico-profissional-centro-de-santana-de-parnaiba'
+      preLoaderRoute: typeof SindicoProfissionalCentroDeSantanaDeParnaibaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-fazendinha': {
+      id: '/sindico-profissional-fazendinha'
+      path: '/sindico-profissional-fazendinha'
+      fullPath: '/sindico-profissional-fazendinha'
+      preLoaderRoute: typeof SindicoProfissionalFazendinhaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-granja-viana': {
+      id: '/sindico-profissional-granja-viana'
+      path: '/sindico-profissional-granja-viana'
+      fullPath: '/sindico-profissional-granja-viana'
+      preLoaderRoute: typeof SindicoProfissionalGranjaVianaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-higienopolis': {
+      id: '/sindico-profissional-higienopolis'
+      path: '/sindico-profissional-higienopolis'
+      fullPath: '/sindico-profissional-higienopolis'
+      preLoaderRoute: typeof SindicoProfissionalHigienopolisRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-ibirapuera': {
+      id: '/sindico-profissional-ibirapuera'
+      path: '/sindico-profissional-ibirapuera'
+      fullPath: '/sindico-profissional-ibirapuera'
+      preLoaderRoute: typeof SindicoProfissionalIbirapueraRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-indaiatuba': {
+      id: '/sindico-profissional-indaiatuba'
+      path: '/sindico-profissional-indaiatuba'
+      fullPath: '/sindico-profissional-indaiatuba'
+      preLoaderRoute: typeof SindicoProfissionalIndaiatubaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-itaim-bibi': {
+      id: '/sindico-profissional-itaim-bibi'
+      path: '/sindico-profissional-itaim-bibi'
+      fullPath: '/sindico-profissional-itaim-bibi'
+      preLoaderRoute: typeof SindicoProfissionalItaimBibiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-jaguaribe': {
+      id: '/sindico-profissional-jaguaribe'
+      path: '/sindico-profissional-jaguaribe'
+      fullPath: '/sindico-profissional-jaguaribe'
+      preLoaderRoute: typeof SindicoProfissionalJaguaribeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-jardim-america': {
+      id: '/sindico-profissional-jardim-america'
+      path: '/sindico-profissional-jardim-america'
+      fullPath: '/sindico-profissional-jardim-america'
+      preLoaderRoute: typeof SindicoProfissionalJardimAmericaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-jardim-europa': {
+      id: '/sindico-profissional-jardim-europa'
+      path: '/sindico-profissional-jardim-europa'
+      fullPath: '/sindico-profissional-jardim-europa'
+      preLoaderRoute: typeof SindicoProfissionalJardimEuropaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-jardim-paulista': {
+      id: '/sindico-profissional-jardim-paulista'
+      path: '/sindico-profissional-jardim-paulista'
+      fullPath: '/sindico-profissional-jardim-paulista'
+      preLoaderRoute: typeof SindicoProfissionalJardimPaulistaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-jardins': {
+      id: '/sindico-profissional-jardins'
+      path: '/sindico-profissional-jardins'
+      fullPath: '/sindico-profissional-jardins'
+      preLoaderRoute: typeof SindicoProfissionalJardinsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-km-18': {
+      id: '/sindico-profissional-km-18'
+      path: '/sindico-profissional-km-18'
+      fullPath: '/sindico-profissional-km-18'
+      preLoaderRoute: typeof SindicoProfissionalKm18RouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-lapa': {
+      id: '/sindico-profissional-lapa'
+      path: '/sindico-profissional-lapa'
+      fullPath: '/sindico-profissional-lapa'
+      preLoaderRoute: typeof SindicoProfissionalLapaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-moema': {
+      id: '/sindico-profissional-moema'
+      path: '/sindico-profissional-moema'
+      fullPath: '/sindico-profissional-moema'
+      preLoaderRoute: typeof SindicoProfissionalMoemaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/sindico-profissional-osasco': {
       id: '/sindico-profissional-osasco'
       path: '/sindico-profissional-osasco'
       fullPath: '/sindico-profissional-osasco'
       preLoaderRoute: typeof SindicoProfissionalOsascoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-ou-sindico-morador': {
+      id: '/sindico-profissional-ou-sindico-morador'
+      path: '/sindico-profissional-ou-sindico-morador'
+      fullPath: '/sindico-profissional-ou-sindico-morador'
+      preLoaderRoute: typeof SindicoProfissionalOuSindicoMoradorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-para-administradoras': {
+      id: '/sindico-profissional-para-administradoras'
+      path: '/sindico-profissional-para-administradoras'
+      fullPath: '/sindico-profissional-para-administradoras'
+      preLoaderRoute: typeof SindicoProfissionalParaAdministradorasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-para-conselho-fiscal': {
+      id: '/sindico-profissional-para-conselho-fiscal'
+      path: '/sindico-profissional-para-conselho-fiscal'
+      fullPath: '/sindico-profissional-para-conselho-fiscal'
+      preLoaderRoute: typeof SindicoProfissionalParaConselhoFiscalRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-parque-dos-principes': {
+      id: '/sindico-profissional-parque-dos-principes'
+      path: '/sindico-profissional-parque-dos-principes'
+      fullPath: '/sindico-profissional-parque-dos-principes'
+      preLoaderRoute: typeof SindicoProfissionalParqueDosPrincipesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-parque-sao-domingos': {
+      id: '/sindico-profissional-parque-sao-domingos'
+      path: '/sindico-profissional-parque-sao-domingos'
+      fullPath: '/sindico-profissional-parque-sao-domingos'
+      preLoaderRoute: typeof SindicoProfissionalParqueSaoDomingosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-paulista': {
+      id: '/sindico-profissional-paulista'
+      path: '/sindico-profissional-paulista'
+      fullPath: '/sindico-profissional-paulista'
+      preLoaderRoute: typeof SindicoProfissionalPaulistaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-perdizes': {
+      id: '/sindico-profissional-perdizes'
+      path: '/sindico-profissional-perdizes'
+      fullPath: '/sindico-profissional-perdizes'
+      preLoaderRoute: typeof SindicoProfissionalPerdizesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-pinheiros': {
+      id: '/sindico-profissional-pinheiros'
+      path: '/sindico-profissional-pinheiros'
+      fullPath: '/sindico-profissional-pinheiros'
+      preLoaderRoute: typeof SindicoProfissionalPinheirosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-pompeia': {
+      id: '/sindico-profissional-pompeia'
+      path: '/sindico-profissional-pompeia'
+      fullPath: '/sindico-profissional-pompeia'
+      preLoaderRoute: typeof SindicoProfissionalPompeiaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-presidente-altino': {
+      id: '/sindico-profissional-presidente-altino'
+      path: '/sindico-profissional-presidente-altino'
+      fullPath: '/sindico-profissional-presidente-altino'
+      preLoaderRoute: typeof SindicoProfissionalPresidenteAltinoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-quitauna': {
+      id: '/sindico-profissional-quitauna'
+      path: '/sindico-profissional-quitauna'
+      fullPath: '/sindico-profissional-quitauna'
+      preLoaderRoute: typeof SindicoProfissionalQuitaunaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/sindico-profissional-santana-de-parnaiba': {
@@ -310,11 +2321,151 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SindicoProfissionalSaoPauloRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/sindico-profissional-sumare': {
+      id: '/sindico-profissional-sumare'
+      path: '/sindico-profissional-sumare'
+      fullPath: '/sindico-profissional-sumare'
+      preLoaderRoute: typeof SindicoProfissionalSumareRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-tambore': {
+      id: '/sindico-profissional-tambore'
+      path: '/sindico-profissional-tambore'
+      fullPath: '/sindico-profissional-tambore'
+      preLoaderRoute: typeof SindicoProfissionalTamboreRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-vila-andrade': {
+      id: '/sindico-profissional-vila-andrade'
+      path: '/sindico-profissional-vila-andrade'
+      fullPath: '/sindico-profissional-vila-andrade'
+      preLoaderRoute: typeof SindicoProfissionalVilaAndradeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-vila-campesina': {
+      id: '/sindico-profissional-vila-campesina'
+      path: '/sindico-profissional-vila-campesina'
+      fullPath: '/sindico-profissional-vila-campesina'
+      preLoaderRoute: typeof SindicoProfissionalVilaCampesinaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-vila-clementino': {
+      id: '/sindico-profissional-vila-clementino'
+      path: '/sindico-profissional-vila-clementino'
+      fullPath: '/sindico-profissional-vila-clementino'
+      preLoaderRoute: typeof SindicoProfissionalVilaClementinoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-vila-leopoldina': {
+      id: '/sindico-profissional-vila-leopoldina'
+      path: '/sindico-profissional-vila-leopoldina'
+      fullPath: '/sindico-profissional-vila-leopoldina'
+      preLoaderRoute: typeof SindicoProfissionalVilaLeopoldinaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-vila-madalena': {
+      id: '/sindico-profissional-vila-madalena'
+      path: '/sindico-profissional-vila-madalena'
+      fullPath: '/sindico-profissional-vila-madalena'
+      preLoaderRoute: typeof SindicoProfissionalVilaMadalenaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-vila-mariana': {
+      id: '/sindico-profissional-vila-mariana'
+      path: '/sindico-profissional-vila-mariana'
+      fullPath: '/sindico-profissional-vila-mariana'
+      preLoaderRoute: typeof SindicoProfissionalVilaMarianaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-vila-mascote': {
+      id: '/sindico-profissional-vila-mascote'
+      path: '/sindico-profissional-vila-mascote'
+      fullPath: '/sindico-profissional-vila-mascote'
+      preLoaderRoute: typeof SindicoProfissionalVilaMascoteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-vila-nova-conceicao': {
+      id: '/sindico-profissional-vila-nova-conceicao'
+      path: '/sindico-profissional-vila-nova-conceicao'
+      fullPath: '/sindico-profissional-vila-nova-conceicao'
+      preLoaderRoute: typeof SindicoProfissionalVilaNovaConceicaoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-vila-olimpia': {
+      id: '/sindico-profissional-vila-olimpia'
+      path: '/sindico-profissional-vila-olimpia'
+      fullPath: '/sindico-profissional-vila-olimpia'
+      preLoaderRoute: typeof SindicoProfissionalVilaOlimpiaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-vila-romana': {
+      id: '/sindico-profissional-vila-romana'
+      path: '/sindico-profissional-vila-romana'
+      fullPath: '/sindico-profissional-vila-romana'
+      preLoaderRoute: typeof SindicoProfissionalVilaRomanaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-vila-sao-francisco': {
+      id: '/sindico-profissional-vila-sao-francisco'
+      path: '/sindico-profissional-vila-sao-francisco'
+      fullPath: '/sindico-profissional-vila-sao-francisco'
+      preLoaderRoute: typeof SindicoProfissionalVilaSaoFranciscoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-vila-yara': {
+      id: '/sindico-profissional-vila-yara'
+      path: '/sindico-profissional-vila-yara'
+      fullPath: '/sindico-profissional-vila-yara'
+      preLoaderRoute: typeof SindicoProfissionalVilaYaraRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sindico-profissional-vinhedo': {
+      id: '/sindico-profissional-vinhedo'
+      path: '/sindico-profissional-vinhedo'
+      fullPath: '/sindico-profissional-vinhedo'
+      preLoaderRoute: typeof SindicoProfissionalVinhedoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/sobre': {
       id: '/sobre'
       path: '/sobre'
       fullPath: '/sobre'
       preLoaderRoute: typeof SobreRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/transicao-sindico-morador-para-profissional': {
+      id: '/transicao-sindico-morador-para-profissional'
+      path: '/transicao-sindico-morador-para-profissional'
+      fullPath: '/transicao-sindico-morador-para-profissional'
+      preLoaderRoute: typeof TransicaoSindicoMoradorParaProfissionalRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/troca-de-sindico': {
+      id: '/troca-de-sindico'
+      path: '/troca-de-sindico'
+      fullPath: '/troca-de-sindico'
+      preLoaderRoute: typeof TrocaDeSindicoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/valorizacao-patrimonial-condominio': {
+      id: '/valorizacao-patrimonial-condominio'
+      path: '/valorizacao-patrimonial-condominio'
+      fullPath: '/valorizacao-patrimonial-condominio'
+      preLoaderRoute: typeof ValorizacaoPatrimonialCondominioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/vantagens-do-sindico-profissional': {
+      id: '/vantagens-do-sindico-profissional'
+      path: '/vantagens-do-sindico-profissional'
+      fullPath: '/vantagens-do-sindico-profissional'
+      preLoaderRoute: typeof VantagensDoSindicoProfissionalRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/visitas-do-sindico-profissional': {
+      id: '/visitas-do-sindico-profissional'
+      path: '/visitas-do-sindico-profissional'
+      fullPath: '/visitas-do-sindico-profissional'
+      preLoaderRoute: typeof VisitasDoSindicoProfissionalRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
@@ -324,18 +2475,146 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   SlugRoute: SlugRoute,
   CasesRoute: CasesRoute,
+  ComoContratarSindicoProfissionalRoute: ComoContratarSindicoProfissionalRoute,
+  ComoEscolherSindicoProfissionalRoute: ComoEscolherSindicoProfissionalRoute,
+  ComoOConselhoPodeContratarSindicoProfissionalRoute:
+    ComoOConselhoPodeContratarSindicoProfissionalRoute,
+  ComplianceCondominialRoute: ComplianceCondominialRoute,
+  ComunicacaoComCondominosRoute: ComunicacaoComCondominosRoute,
+  CondominioEmCriseRoute: CondominioEmCriseRoute,
+  CondominioSemCandidatoASindicoRoute: CondominioSemCandidatoASindicoRoute,
+  ConducaoDeAssembleiasRoute: ConducaoDeAssembleiasRoute,
   ContatoRoute: ContatoRoute,
+  ContratacaoDeSindicoProfissionalEmAssembleiaRoute:
+    ContratacaoDeSindicoProfissionalEmAssembleiaRoute,
+  DiagnosticoCondominialRoute: DiagnosticoCondominialRoute,
   DiferenciaisRoute: DiferenciaisRoute,
+  EleicaoDeSindicoProfissionalRoute: EleicaoDeSindicoProfissionalRoute,
+  FaltaDeTransparenciaNoCondominioRoute: FaltaDeTransparenciaNoCondominioRoute,
+  GestaoAdministrativaDeCondominioRoute: GestaoAdministrativaDeCondominioRoute,
   GestaoCondominialRoute: GestaoCondominialRoute,
+  GestaoDeContratosDoCondominioRoute: GestaoDeContratosDoCondominioRoute,
+  GestaoDeInadimplenciaCondominialRoute: GestaoDeInadimplenciaCondominialRoute,
+  GestaoDePrestadoresEEquipesRoute: GestaoDePrestadoresEEquipesRoute,
+  GovernancaCondominialRoute: GovernancaCondominialRoute,
+  ImplantacaoDeCondominioRoute: ImplantacaoDeCondominioRoute,
+  LegalizacaoDeCondominioRoute: LegalizacaoDeCondominioRoute,
+  ManutencaoPreventivaCondominialRoute: ManutencaoPreventivaCondominialRoute,
+  MediacaoDeConflitosCondominiaisRoute: MediacaoDeConflitosCondominiaisRoute,
+  ModernizacaoDeCondominioRoute: ModernizacaoDeCondominioRoute,
+  OQueFazUmSindicoProfissionalRoute: OQueFazUmSindicoProfissionalRoute,
+  OrientacaoParaSindicoMoradorRoute: OrientacaoParaSindicoMoradorRoute,
+  PlanejamentoPlurianualCondominioRoute: PlanejamentoPlurianualCondominioRoute,
+  PrestacaoDeContasCondominialRoute: PrestacaoDeContasCondominialRoute,
+  QuandoTrocarOSindicoRoute: QuandoTrocarOSindicoRoute,
+  RecuperacaoFinanceiraDeCondominioRoute:
+    RecuperacaoFinanceiraDeCondominioRoute,
   RegioesRoute: RegioesRoute,
+  RelacaoSindicoProfissionalEConselhoRoute:
+    RelacaoSindicoProfissionalEConselhoRoute,
+  ResponsabilidadesDoSindicoProfissionalRoute:
+    ResponsabilidadesDoSindicoProfissionalRoute,
+  SegurancaPatrimonialCondominioRoute: SegurancaPatrimonialCondominioRoute,
   ServicosRoute: ServicosRoute,
+  SindicaturaProfissionalRoute: SindicaturaProfissionalRoute,
+  SindicoParaCondominioAltoPadraoRoute: SindicoParaCondominioAltoPadraoRoute,
+  SindicoParaCondominioAntigoRoute: SindicoParaCondominioAntigoRoute,
+  SindicoParaCondominioClubeRoute: SindicoParaCondominioClubeRoute,
+  SindicoParaCondominioComercialRoute: SindicoParaCondominioComercialRoute,
+  SindicoParaCondominioGrandePorteRoute: SindicoParaCondominioGrandePorteRoute,
+  SindicoParaCondominioHorizontalRoute: SindicoParaCondominioHorizontalRoute,
+  SindicoParaCondominioMistoRoute: SindicoParaCondominioMistoRoute,
+  SindicoParaCondominioMultiplasTorresRoute:
+    SindicoParaCondominioMultiplasTorresRoute,
+  SindicoParaCondominioOperacaoComplexaRoute:
+    SindicoParaCondominioOperacaoComplexaRoute,
+  SindicoParaCondominioResidencialRoute: SindicoParaCondominioResidencialRoute,
+  SindicoProfissionalAldeiaDaSerraRoute: SindicoProfissionalAldeiaDaSerraRoute,
   SindicoProfissionalAlphavilleRoute: SindicoProfissionalAlphavilleRoute,
+  SindicoProfissionalAltoDaBoaVistaRoute:
+    SindicoProfissionalAltoDaBoaVistaRoute,
+  SindicoProfissionalAltoDaLapaRoute: SindicoProfissionalAltoDaLapaRoute,
+  SindicoProfissionalAltoDePinheirosRoute:
+    SindicoProfissionalAltoDePinheirosRoute,
+  SindicoProfissionalBarraFundaRoute: SindicoProfissionalBarraFundaRoute,
   SindicoProfissionalBarueriRoute: SindicoProfissionalBarueriRoute,
+  SindicoProfissionalBelaVistaRoute: SindicoProfissionalBelaVistaRoute,
+  SindicoProfissionalBelaVistaOsascoRoute:
+    SindicoProfissionalBelaVistaOsascoRoute,
+  SindicoProfissionalBrooklinRoute: SindicoProfissionalBrooklinRoute,
+  SindicoProfissionalBussocabaRoute: SindicoProfissionalBussocabaRoute,
+  SindicoProfissionalButantaRoute: SindicoProfissionalButantaRoute,
+  SindicoProfissionalCampinasRoute: SindicoProfissionalCampinasRoute,
+  SindicoProfissionalCampoBeloRoute: SindicoProfissionalCampoBeloRoute,
+  SindicoProfissionalCarapicuibaRoute: SindicoProfissionalCarapicuibaRoute,
+  SindicoProfissionalCentroDeBarueriRoute:
+    SindicoProfissionalCentroDeBarueriRoute,
+  SindicoProfissionalCentroDeOsascoRoute:
+    SindicoProfissionalCentroDeOsascoRoute,
+  SindicoProfissionalCentroDeSantanaDeParnaibaRoute:
+    SindicoProfissionalCentroDeSantanaDeParnaibaRoute,
+  SindicoProfissionalFazendinhaRoute: SindicoProfissionalFazendinhaRoute,
+  SindicoProfissionalGranjaVianaRoute: SindicoProfissionalGranjaVianaRoute,
+  SindicoProfissionalHigienopolisRoute: SindicoProfissionalHigienopolisRoute,
+  SindicoProfissionalIbirapueraRoute: SindicoProfissionalIbirapueraRoute,
+  SindicoProfissionalIndaiatubaRoute: SindicoProfissionalIndaiatubaRoute,
+  SindicoProfissionalItaimBibiRoute: SindicoProfissionalItaimBibiRoute,
+  SindicoProfissionalJaguaribeRoute: SindicoProfissionalJaguaribeRoute,
+  SindicoProfissionalJardimAmericaRoute: SindicoProfissionalJardimAmericaRoute,
+  SindicoProfissionalJardimEuropaRoute: SindicoProfissionalJardimEuropaRoute,
+  SindicoProfissionalJardimPaulistaRoute:
+    SindicoProfissionalJardimPaulistaRoute,
+  SindicoProfissionalJardinsRoute: SindicoProfissionalJardinsRoute,
+  SindicoProfissionalKm18Route: SindicoProfissionalKm18Route,
+  SindicoProfissionalLapaRoute: SindicoProfissionalLapaRoute,
+  SindicoProfissionalMoemaRoute: SindicoProfissionalMoemaRoute,
   SindicoProfissionalOsascoRoute: SindicoProfissionalOsascoRoute,
+  SindicoProfissionalOuSindicoMoradorRoute:
+    SindicoProfissionalOuSindicoMoradorRoute,
+  SindicoProfissionalParaAdministradorasRoute:
+    SindicoProfissionalParaAdministradorasRoute,
+  SindicoProfissionalParaConselhoFiscalRoute:
+    SindicoProfissionalParaConselhoFiscalRoute,
+  SindicoProfissionalParqueDosPrincipesRoute:
+    SindicoProfissionalParqueDosPrincipesRoute,
+  SindicoProfissionalParqueSaoDomingosRoute:
+    SindicoProfissionalParqueSaoDomingosRoute,
+  SindicoProfissionalPaulistaRoute: SindicoProfissionalPaulistaRoute,
+  SindicoProfissionalPerdizesRoute: SindicoProfissionalPerdizesRoute,
+  SindicoProfissionalPinheirosRoute: SindicoProfissionalPinheirosRoute,
+  SindicoProfissionalPompeiaRoute: SindicoProfissionalPompeiaRoute,
+  SindicoProfissionalPresidenteAltinoRoute:
+    SindicoProfissionalPresidenteAltinoRoute,
+  SindicoProfissionalQuitaunaRoute: SindicoProfissionalQuitaunaRoute,
   SindicoProfissionalSantanaDeParnaibaRoute:
     SindicoProfissionalSantanaDeParnaibaRoute,
   SindicoProfissionalSaoPauloRoute: SindicoProfissionalSaoPauloRoute,
+  SindicoProfissionalSumareRoute: SindicoProfissionalSumareRoute,
+  SindicoProfissionalTamboreRoute: SindicoProfissionalTamboreRoute,
+  SindicoProfissionalVilaAndradeRoute: SindicoProfissionalVilaAndradeRoute,
+  SindicoProfissionalVilaCampesinaRoute: SindicoProfissionalVilaCampesinaRoute,
+  SindicoProfissionalVilaClementinoRoute:
+    SindicoProfissionalVilaClementinoRoute,
+  SindicoProfissionalVilaLeopoldinaRoute:
+    SindicoProfissionalVilaLeopoldinaRoute,
+  SindicoProfissionalVilaMadalenaRoute: SindicoProfissionalVilaMadalenaRoute,
+  SindicoProfissionalVilaMarianaRoute: SindicoProfissionalVilaMarianaRoute,
+  SindicoProfissionalVilaMascoteRoute: SindicoProfissionalVilaMascoteRoute,
+  SindicoProfissionalVilaNovaConceicaoRoute:
+    SindicoProfissionalVilaNovaConceicaoRoute,
+  SindicoProfissionalVilaOlimpiaRoute: SindicoProfissionalVilaOlimpiaRoute,
+  SindicoProfissionalVilaRomanaRoute: SindicoProfissionalVilaRomanaRoute,
+  SindicoProfissionalVilaSaoFranciscoRoute:
+    SindicoProfissionalVilaSaoFranciscoRoute,
+  SindicoProfissionalVilaYaraRoute: SindicoProfissionalVilaYaraRoute,
+  SindicoProfissionalVinhedoRoute: SindicoProfissionalVinhedoRoute,
   SobreRoute: SobreRoute,
+  TransicaoSindicoMoradorParaProfissionalRoute:
+    TransicaoSindicoMoradorParaProfissionalRoute,
+  TrocaDeSindicoRoute: TrocaDeSindicoRoute,
+  ValorizacaoPatrimonialCondominioRoute: ValorizacaoPatrimonialCondominioRoute,
+  VantagensDoSindicoProfissionalRoute: VantagensDoSindicoProfissionalRoute,
+  VisitasDoSindicoProfissionalRoute: VisitasDoSindicoProfissionalRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
