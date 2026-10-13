@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://ricardoprinciotto.com.br/sitemap.xml
+Sitemap: https://sindicoricardo.com.br/sitemap.xml

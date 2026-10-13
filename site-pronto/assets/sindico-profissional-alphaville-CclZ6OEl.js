@@ -1,0 +1,1 @@
+import{N as e}from"./proxy-D6KLJN8B.js";import{t}from"./localPages-CpM18cjb.js";import{t as n}from"./LocalPageTemplate-C1wmVULx.js";var r=e(),i=()=>(0,r.jsx)(n,{data:t});export{i as component};
