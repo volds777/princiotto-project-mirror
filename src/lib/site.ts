@@ -4,7 +4,7 @@ export const SITE = {
   whatsappNumber: "5511989298878",
   whatsappDisplay: "+55 (11) 98929-8878",
   email: "contato@ricardoprinciotto.com.br",
-  baseUrl: "https://ricardoprinciotto.com.br",
+  baseUrl: "https://sindicoricardo.com.br",
   regions: ["Osasco", "Barueri", "Alphaville", "Santana de Parnaíba", "São Paulo"],
   credentials: ["Bel. em Direito pela PUC/SP", "Especialista em segurança patrimonial e pessoal"],
   socials: {

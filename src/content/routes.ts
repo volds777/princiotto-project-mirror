@@ -3,7 +3,7 @@ import { osasco, barueri, alphaville, santanaParnaiba, saoPaulo } from "../data/
 import { allEntities } from "./collections";
 
 /** Canonical origin (non-www + https, as used by the current site). */
-export const SITE_ORIGIN = "https://ricardoprinciotto.com.br";
+export const SITE_ORIGIN = "https://sindicoricardo.com.br";
 
 const home = { name: "Início", path: "/" };
 const regioes = { name: "Regiões", path: "/regioes" };
