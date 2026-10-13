@@ -1,1 +1,0 @@
-import{N as e}from"./proxy-DMjDK1VC.js";import{Yt as t,ot as n}from"./index-0wC68TUc.js";var r=e(),i=()=>(0,r.jsx)(t,{path:n});export{i as component};

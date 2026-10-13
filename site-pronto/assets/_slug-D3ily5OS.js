@@ -1,0 +1,1 @@
+import{N as e}from"./proxy-D6KLJN8B.js";import{o as t}from"./collections-Cf7-6ecd.js";import{$t as n,Xt as r,en as i}from"./index-BQTtyuZp.js";var a=e();function o(){let{path:e}=n.useLoaderData(),o=i(e);if(!o?.entity)return null;let s=t(o.entity.collection,o.entity.id);if(!s)return null;let c=r[o.entity.collection];return(0,a.jsx)(c,{entity:s,route:o})}export{o as component};

@@ -1,0 +1,1 @@
+import{N as e}from"./proxy-D6KLJN8B.js";import{I as t,Yt as n}from"./index-BQTtyuZp.js";var r=e(),i=()=>(0,r.jsx)(n,{path:t});export{i as component};
